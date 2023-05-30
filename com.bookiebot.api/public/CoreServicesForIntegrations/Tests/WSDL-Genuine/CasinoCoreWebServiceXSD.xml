@@ -1,0 +1,1675 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2.5-b01 . -->
+<xs:schema xmlns:tns="http://integration.casinocore.singular.ge/" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           version="1.0" targetNamespace="http://integration.casinocore.singular.ge/">
+
+    <xs:element name="addNewIDDocument" type="tns:addNewIDDocument"/>
+
+    <xs:element name="addNewIDDocumentResponse" type="tns:addNewIDDocumentResponse"/>
+
+    <xs:element name="addNewProvider" type="tns:addNewProvider"/>
+
+    <xs:element name="addNewProviderResponse" type="tns:addNewProviderResponse"/>
+
+    <xs:element name="addPromoCode" type="tns:addPromoCode"/>
+
+    <xs:element name="addPromoCodeResponse" type="tns:addPromoCodeResponse"/>
+
+    <xs:element name="addProviderResponseItem" type="tns:addProviderResponseItem"/>
+
+    <xs:element name="addReferral" type="tns:addReferral"/>
+
+    <xs:element name="addReferralResponse" type="tns:addReferralResponse"/>
+
+    <xs:element name="addStatus" type="tns:addStatus"/>
+
+    <xs:element name="addStatusResponse" type="tns:addStatusResponse"/>
+
+    <xs:element name="amountResponseItem" type="tns:amountResponseItem"/>
+
+    <xs:element name="authByTokenResponseItem" type="tns:authByTokenResponseItem"/>
+
+    <xs:element name="authenticateUserByToken" type="tns:authenticateUserByToken"/>
+
+    <xs:element name="authenticateUserByTokenResponse" type="tns:authenticateUserByTokenResponse"/>
+
+    <xs:element name="authorizationItem" type="tns:authorizationItem"/>
+
+    <xs:element name="changeUserPreferedCurrency" type="tns:changeUserPreferedCurrency"/>
+
+    <xs:element name="changeUserPreferedCurrencyResponse" type="tns:changeUserPreferedCurrencyResponse"/>
+
+    <xs:element name="changeUsersStatus" type="tns:changeUsersStatus"/>
+
+    <xs:element name="changeUsersStatusResponse" type="tns:changeUsersStatusResponse"/>
+
+    <xs:element name="checkUsersCredentials" type="tns:checkUsersCredentials"/>
+
+    <xs:element name="checkUsersCredentialsResponse" type="tns:checkUsersCredentialsResponse"/>
+
+    <xs:element name="currencyItem" type="tns:currencyItem"/>
+
+    <xs:element name="deleteIDDocument" type="tns:deleteIDDocument"/>
+
+    <xs:element name="deleteIDDocumentResponse" type="tns:deleteIDDocumentResponse"/>
+
+    <xs:element name="editIDDocumentPhoto" type="tns:editIDDocumentPhoto"/>
+
+    <xs:element name="editIDDocumentPhotoResponse" type="tns:editIDDocumentPhotoResponse"/>
+
+    <xs:element name="editPromoCode" type="tns:editPromoCode"/>
+
+    <xs:element name="editPromoCodeResponse" type="tns:editPromoCodeResponse"/>
+
+    <xs:element name="editProvider" type="tns:editProvider"/>
+
+    <xs:element name="editProviderResponse" type="tns:editProviderResponse"/>
+
+    <xs:element name="editReferral" type="tns:editReferral"/>
+
+    <xs:element name="editReferralResponse" type="tns:editReferralResponse"/>
+
+    <xs:element name="editStatus" type="tns:editStatus"/>
+
+    <xs:element name="editStatusResponse" type="tns:editStatusResponse"/>
+
+    <xs:element name="editUsersClubCard" type="tns:editUsersClubCard"/>
+
+    <xs:element name="editUsersClubCardResponse" type="tns:editUsersClubCardResponse"/>
+
+    <xs:element name="errorObjectItem" type="tns:errorObjectItem"/>
+
+    <xs:element name="exchange" type="tns:exchange"/>
+
+    <xs:element name="exchangeResponse" type="tns:exchangeResponse"/>
+
+    <xs:element name="exchangerateArchiveItem" type="tns:exchangerateArchiveItem"/>
+
+    <xs:element name="exchangerateItem" type="tns:exchangerateItem"/>
+
+    <xs:element name="genericResponseItem" type="tns:genericResponseItem"/>
+
+    <xs:element name="getActiveCurrencies" type="tns:getActiveCurrencies"/>
+
+    <xs:element name="getActiveCurrenciesResponse" type="tns:getActiveCurrenciesResponse"/>
+
+    <xs:element name="getBalance" type="tns:getBalance"/>
+
+    <xs:element name="getBalanceResponse" type="tns:getBalanceResponse"/>
+
+    <xs:element name="getDepositLimits" type="tns:getDepositLimits"/>
+
+    <xs:element name="getDepositLimitsResponse" type="tns:getDepositLimitsResponse"/>
+
+    <xs:element name="getExchangeRates" type="tns:getExchangeRates"/>
+
+    <xs:element name="getExchangeRatesArchive" type="tns:getExchangeRatesArchive"/>
+
+    <xs:element name="getExchangeRatesArchiveResponse" type="tns:getExchangeRatesArchiveResponse"/>
+
+    <xs:element name="getExchangeRatesResponse" type="tns:getExchangeRatesResponse"/>
+
+    <xs:element name="getIDDocumentsToVerify" type="tns:getIDDocumentsToVerify"/>
+
+    <xs:element name="getIDDocumentsToVerifyCount" type="tns:getIDDocumentsToVerifyCount"/>
+
+    <xs:element name="getIDDocumentsToVerifyCountResponse" type="tns:getIDDocumentsToVerifyCountResponse"/>
+
+    <xs:element name="getIDDocumentsToVerifyResponse" type="tns:getIDDocumentsToVerifyResponse"/>
+
+    <xs:element name="getPromoCode" type="tns:getPromoCode"/>
+
+    <xs:element name="getPromoCodeCount" type="tns:getPromoCodeCount"/>
+
+    <xs:element name="getPromoCodeCountResponse" type="tns:getPromoCodeCountResponse"/>
+
+    <xs:element name="getPromoCodeResponse" type="tns:getPromoCodeResponse"/>
+
+    <xs:element name="getPromoCodes" type="tns:getPromoCodes"/>
+
+    <xs:element name="getPromoCodesResponse" type="tns:getPromoCodesResponse"/>
+
+    <xs:element name="getProvider" type="tns:getProvider"/>
+
+    <xs:element name="getProviderCount" type="tns:getProviderCount"/>
+
+    <xs:element name="getProviderCountResponse" type="tns:getProviderCountResponse"/>
+
+    <xs:element name="getProviderResponse" type="tns:getProviderResponse"/>
+
+    <xs:element name="getProviders" type="tns:getProviders"/>
+
+    <xs:element name="getProvidersResponse" type="tns:getProvidersResponse"/>
+
+    <xs:element name="getReferral" type="tns:getReferral"/>
+
+    <xs:element name="getReferralCount" type="tns:getReferralCount"/>
+
+    <xs:element name="getReferralCountResponse" type="tns:getReferralCountResponse"/>
+
+    <xs:element name="getReferralResponse" type="tns:getReferralResponse"/>
+
+    <xs:element name="getReferrals" type="tns:getReferrals"/>
+
+    <xs:element name="getReferralsByReferralName" type="tns:getReferralsByReferralName"/>
+
+    <xs:element name="getReferralsByReferralNameResponse" type="tns:getReferralsByReferralNameResponse"/>
+
+    <xs:element name="getReferralsResponse" type="tns:getReferralsResponse"/>
+
+    <xs:element name="getSelfExcludeInfo" type="tns:getSelfExcludeInfo"/>
+
+    <xs:element name="getSelfExcludeInfoResponse" type="tns:getSelfExcludeInfoResponse"/>
+
+    <xs:element name="getServiceAuthToken" type="tns:getServiceAuthToken"/>
+
+    <xs:element name="getServiceAuthTokenResponse" type="tns:getServiceAuthTokenResponse"/>
+
+    <xs:element name="getStatus" type="tns:getStatus"/>
+
+    <xs:element name="getStatusResponse" type="tns:getStatusResponse"/>
+
+    <xs:element name="getStatuses" type="tns:getStatuses"/>
+
+    <xs:element name="getStatusesResponse" type="tns:getStatusesResponse"/>
+
+    <xs:element name="getSystemPrimaryCurrency" type="tns:getSystemPrimaryCurrency"/>
+
+    <xs:element name="getSystemPrimaryCurrencyResponse" type="tns:getSystemPrimaryCurrencyResponse"/>
+
+    <xs:element name="getUserAccessList" type="tns:getUserAccessList"/>
+
+    <xs:element name="getUserAccessListResponse" type="tns:getUserAccessListResponse"/>
+
+    <xs:element name="getUserActiveAccount" type="tns:getUserActiveAccount"/>
+
+    <xs:element name="getUserActiveAccountResponse" type="tns:getUserActiveAccountResponse"/>
+
+    <xs:element name="getUserActiveAccounts" type="tns:getUserActiveAccounts"/>
+
+    <xs:element name="getUserActiveAccountsResponse" type="tns:getUserActiveAccountsResponse"/>
+
+    <xs:element name="getUserData" type="tns:getUserData"/>
+
+    <xs:element name="getUserDataResponse" type="tns:getUserDataResponse"/>
+
+    <xs:element name="getUserHistory" type="tns:getUserHistory"/>
+
+    <xs:element name="getUserHistoryResponse" type="tns:getUserHistoryResponse"/>
+
+    <xs:element name="getUserInfo" type="tns:getUserInfo"/>
+
+    <xs:element name="getUserInfoResponse" type="tns:getUserInfoResponse"/>
+
+    <xs:element name="getUsersActiveSession" type="tns:getUsersActiveSession"/>
+
+    <xs:element name="getUsersActiveSessionResponse" type="tns:getUsersActiveSessionResponse"/>
+
+    <xs:element name="getUsersIDDocuments" type="tns:getUsersIDDocuments"/>
+
+    <xs:element name="getUsersIDDocumentsArchive" type="tns:getUsersIDDocumentsArchive"/>
+
+    <xs:element name="getUsersIDDocumentsArchiveResponse" type="tns:getUsersIDDocumentsArchiveResponse"/>
+
+    <xs:element name="getUsersIDDocumentsResponse" type="tns:getUsersIDDocumentsResponse"/>
+
+    <xs:element name="getUsersTransactionLimitAmount" type="tns:getUsersTransactionLimitAmount"/>
+
+    <xs:element name="getUsersTransactionLimitAmountResponse" type="tns:getUsersTransactionLimitAmountResponse"/>
+
+    <xs:element name="idDocExists" type="tns:idDocExists"/>
+
+    <xs:element name="idDocExistsResponse" type="tns:idDocExistsResponse"/>
+
+    <xs:element name="idDocExistsResponseItem" type="tns:idDocExistsResponseItem"/>
+
+    <xs:element name="logoutUser" type="tns:logoutUser"/>
+
+    <xs:element name="logoutUserResponse" type="tns:logoutUserResponse"/>
+
+    <xs:element name="lookupIDDocument" type="tns:lookupIDDocument"/>
+
+    <xs:element name="lookupIDDocumentHistory" type="tns:lookupIDDocumentHistory"/>
+
+    <xs:element name="lookupIDDocumentHistoryExtended" type="tns:lookupIDDocumentHistoryExtended"/>
+
+    <xs:element name="lookupIDDocumentHistoryExtendedResponse" type="tns:lookupIDDocumentHistoryExtendedResponse"/>
+
+    <xs:element name="lookupIDDocumentHistoryResponse" type="tns:lookupIDDocumentHistoryResponse"/>
+
+    <xs:element name="lookupIDDocumentResponse" type="tns:lookupIDDocumentResponse"/>
+
+    <xs:element name="lookupIDDocuments" type="tns:lookupIDDocuments"/>
+
+    <xs:element name="lookupIDDocumentsResponse" type="tns:lookupIDDocumentsResponse"/>
+
+    <xs:element name="lookupUserInfo" type="tns:lookupUserInfo"/>
+
+    <xs:element name="lookupUserInfoInHistory" type="tns:lookupUserInfoInHistory"/>
+
+    <xs:element name="lookupUserInfoInHistoryResponse" type="tns:lookupUserInfoInHistoryResponse"/>
+
+    <xs:element name="lookupUserInfoResponse" type="tns:lookupUserInfoResponse"/>
+
+    <xs:element name="offUsersOTP" type="tns:offUsersOTP"/>
+
+    <xs:element name="offUsersOTPResponse" type="tns:offUsersOTPResponse"/>
+
+    <xs:element name="promocodeItem" type="tns:promocodeItem"/>
+
+    <xs:element name="providerItem" type="tns:providerItem"/>
+
+    <xs:element name="referralItem" type="tns:referralItem"/>
+
+    <xs:element name="resetPassword" type="tns:resetPassword"/>
+
+    <xs:element name="resetPasswordResponse" type="tns:resetPasswordResponse"/>
+
+    <xs:element name="selfExcludeUser" type="tns:selfExcludeUser"/>
+
+    <xs:element name="selfExcludeUserResponse" type="tns:selfExcludeUserResponse"/>
+
+    <xs:element name="sessionItem" type="tns:sessionItem"/>
+
+    <xs:element name="suspendUser" type="tns:suspendUser"/>
+
+    <xs:element name="suspendUserResponse" type="tns:suspendUserResponse"/>
+
+    <xs:element name="unSuspendUser" type="tns:unSuspendUser"/>
+
+    <xs:element name="unSuspendUserResponse" type="tns:unSuspendUserResponse"/>
+
+    <xs:element name="updateActiveNotifications" type="tns:updateActiveNotifications"/>
+
+    <xs:element name="updateActiveNotificationsResponse" type="tns:updateActiveNotificationsResponse"/>
+
+    <xs:element name="updateCanVerifyIDDoc" type="tns:updateCanVerifyIDDoc"/>
+
+    <xs:element name="updateCanVerifyIDDocResponse" type="tns:updateCanVerifyIDDocResponse"/>
+
+    <xs:element name="updateExchangeRate" type="tns:updateExchangeRate"/>
+
+    <xs:element name="updateExchangeRateResponse" type="tns:updateExchangeRateResponse"/>
+
+    <xs:element name="updateGamingIndex" type="tns:updateGamingIndex"/>
+
+    <xs:element name="updateGamingIndexResponse" type="tns:updateGamingIndexResponse"/>
+
+    <xs:element name="updateIDDocument" type="tns:updateIDDocument"/>
+
+    <xs:element name="updateIDDocumentResponse" type="tns:updateIDDocumentResponse"/>
+
+    <xs:element name="updateProfileResponseItem" type="tns:updateProfileResponseItem"/>
+
+    <xs:element name="updateUsersPersonalInfo" type="tns:updateUsersPersonalInfo"/>
+
+    <xs:element name="updateUsersPersonalInfoResponse" type="tns:updateUsersPersonalInfoResponse"/>
+
+    <xs:element name="userArchiveItem" type="tns:userArchiveItem"/>
+
+    <xs:element name="userDataResponseItem" type="tns:userDataResponseItem"/>
+
+    <xs:element name="userItem" type="tns:userItem"/>
+
+    <xs:element name="useraccountItem" type="tns:useraccountItem"/>
+
+    <xs:element name="userdocumentArchiveItem" type="tns:userdocumentArchiveItem"/>
+
+    <xs:element name="userdocumentItem" type="tns:userdocumentItem"/>
+
+    <xs:element name="userlimitItem" type="tns:userlimitItem"/>
+
+    <xs:element name="userstatusesItem" type="tns:userstatusesItem"/>
+
+    <xs:complexType name="unSuspendUser">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="statusNote" type="xs:string" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="unSuspendUserResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:genericResponseItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="genericResponseItem">
+        <xs:sequence>
+            <xs:element name="responseCode" type="xs:int"/>
+            <xs:element name="returnValue" type="xs:string" minOccurs="0"/>
+            <xs:element name="returnValueLong" type="xs:long" minOccurs="0"/>
+            <xs:element name="modificationDate" type="xs:dateTime" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="lookupIDDocuments">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="documentNumber" type="xs:string" minOccurs="0"/>
+            <xs:element name="personalID" type="xs:string" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="lookupIDDocumentsResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:userdocumentItem" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="userdocumentItem">
+        <xs:sequence>
+            <xs:element name="ID" type="xs:long"/>
+            <xs:element name="DocumentTypeID" type="xs:short"/>
+            <xs:element name="DocumentNumber" type="xs:string" minOccurs="0"/>
+            <xs:element name="PersonalID" type="xs:string" minOccurs="0"/>
+            <xs:element name="CountryID" type="xs:short"/>
+            <xs:element name="DocumentURL" type="xs:string" minOccurs="0"/>
+            <xs:element name="UserId" type="xs:long"/>
+            <xs:element name="DateModified" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="IsVerified" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="editReferral">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="referralID" type="xs:string" minOccurs="0"/>
+            <xs:element name="referralName" type="xs:string" minOccurs="0"/>
+            <xs:element name="expireDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="isSingle" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="isActive" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="editReferralResponse">
+        <xs:sequence>
+            <xs:element name="result" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="offUsersOTP">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="offUsersOTPResponse">
+        <xs:sequence>
+            <xs:element name="result" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="selfExcludeUser">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="blockDuration" type="xs:int"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="selfExcludeUserResponse">
+        <xs:sequence>
+            <xs:element name="result" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="addNewProvider">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="providerName" type="xs:string" minOccurs="0"/>
+            <xs:element name="description" type="xs:string" minOccurs="0"/>
+            <xs:element name="permission" type="xs:long" minOccurs="0"/>
+            <xs:element name="percent" type="xs:double" minOccurs="0"/>
+            <xs:element name="surchargePercent" type="xs:double" minOccurs="0"/>
+            <xs:element name="minAmount" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="maxAmount" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="transactionIsCash" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="isActive" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="rollbackLimitMinutes" type="xs:int"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="addNewProviderResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:addProviderResponseItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="addProviderResponseItem">
+        <xs:sequence>
+            <xs:element name="responseCode" type="xs:int"/>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="secretKey" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getUserActiveAccounts">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getUserActiveAccountsResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:useraccountItem" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="useraccountItem">
+        <xs:sequence>
+            <xs:element name="ID" type="xs:long"/>
+            <xs:element name="UserId" type="xs:long"/>
+            <xs:element name="CurrencyId" type="xs:short"/>
+            <xs:element name="Balance" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="isActive" type="xs:boolean" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="lookupUserInfo">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="lookupString" type="xs:string" minOccurs="0"/>
+            <xs:element name="lookupFieldType" type="xs:short"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="lookupUserInfoResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:userItem" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="userItem">
+        <xs:sequence>
+            <xs:element name="ID" type="xs:long"/>
+            <xs:element name="Name" type="xs:string" minOccurs="0"/>
+            <xs:element name="Surname" type="xs:string" minOccurs="0"/>
+            <xs:element name="MiddleName" type="xs:string" minOccurs="0"/>
+            <xs:element name="Gender" type="xs:unsignedShort"/>
+            <xs:element name="UserName" type="xs:string" minOccurs="0"/>
+            <xs:element name="CountryID" type="xs:short"/>
+            <xs:element name="Address" type="xs:string" minOccurs="0"/>
+            <xs:element name="BirthDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="EMail" type="xs:string" minOccurs="0"/>
+            <xs:element name="TelephoneNumber" type="xs:string" minOccurs="0"/>
+            <xs:element name="StatusID" type="xs:short"/>
+            <xs:element name="CreatorIP" type="xs:string" minOccurs="0"/>
+            <xs:element name="OTPEnabled" type="xs:boolean"/>
+            <xs:element name="DateModified" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="PromoCodeID" type="xs:string" minOccurs="0"/>
+            <xs:element name="UserClubCard" type="xs:string" minOccurs="0"/>
+            <xs:element name="ReferralID" type="xs:string" minOccurs="0"/>
+            <xs:element name="StatusNote" type="xs:string" minOccurs="0"/>
+            <xs:element name="TermsVersion" type="xs:string" minOccurs="0"/>
+            <xs:element name="UserLanguage" type="xs:string" minOccurs="0"/>
+            <xs:element name="GamingIndex" type="xs:short"/>
+            <xs:element name="TelephoneCode" type="xs:string" minOccurs="0"/>
+            <xs:element name="SuspendTill" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="DateRegistered" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="ActiveNotifications" type="xs:long"/>
+            <xs:element name="CanVerifyIDDoc" type="xs:boolean"/>
+            <xs:element name="PreferredCurrencyID" type="xs:short"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getStatus">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="statusID" type="xs:short"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getStatusResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:userstatusesItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="userstatusesItem">
+        <xs:sequence>
+            <xs:element name="ID" type="xs:short"/>
+            <xs:element name="StatusNameEn" type="xs:string" minOccurs="0"/>
+            <xs:element name="BlockType" type="xs:short"/>
+            <xs:element name="CashoutLimit" type="xs:decimal" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="suspendUser">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="suspendDuration" type="xs:int"/>
+            <xs:element name="statusNote" type="xs:string" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="suspendUserResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:genericResponseItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="editStatus">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="statusID" type="xs:short"/>
+            <xs:element name="statusName" type="xs:string" minOccurs="0"/>
+            <xs:element name="blockType" type="xs:short" minOccurs="0"/>
+            <xs:element name="cashoutLimit" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="editStatusResponse">
+        <xs:sequence>
+            <xs:element name="result" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getProviders">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="pageIndex" type="xs:int"/>
+            <xs:element name="maxResultPerPage" type="xs:int"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getProvidersResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:providerItem" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="providerItem">
+        <xs:sequence>
+            <xs:element name="ProviderID" type="xs:string" minOccurs="0"/>
+            <xs:element name="Name" type="xs:string" minOccurs="0"/>
+            <xs:element name="Description" type="xs:string" minOccurs="0"/>
+            <xs:element name="Permission" type="xs:long"/>
+            <xs:element name="SecretKey" type="xs:string" minOccurs="0"/>
+            <xs:element name="Percent" type="xs:double" minOccurs="0"/>
+            <xs:element name="SurchargePercent" type="xs:double" minOccurs="0"/>
+            <xs:element name="MinAmount" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="MaxAmount" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="TransactionIsCash" type="xs:boolean"/>
+            <xs:element name="CreateDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="ModificationDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="IsActive" type="xs:boolean"/>
+            <xs:element name="RollbackLimitMinutes" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="changeUsersStatus">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="statusID" type="xs:short"/>
+            <xs:element name="statusNote" type="xs:string" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="changeUsersStatusResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:genericResponseItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="editUsersClubCard">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="clubCardID" type="xs:string" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="editUsersClubCardResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:genericResponseItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getServiceAuthToken">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getServiceAuthTokenResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:genericResponseItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="addStatus">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="statusName" type="xs:string" minOccurs="0"/>
+            <xs:element name="blockType" type="xs:short"/>
+            <xs:element name="cashoutLimit" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="addStatusResponse">
+        <xs:sequence>
+            <xs:element name="result" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getUserHistory">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="fromDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="toDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getUserHistoryResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:userArchiveItem" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="userArchiveItem">
+        <xs:sequence>
+            <xs:element name="ID" type="xs:long"/>
+            <xs:element name="UserId" type="xs:long"/>
+            <xs:element name="Name" type="xs:string" minOccurs="0"/>
+            <xs:element name="Surname" type="xs:string" minOccurs="0"/>
+            <xs:element name="MiddleName" type="xs:string" minOccurs="0"/>
+            <xs:element name="Gender" type="xs:unsignedShort"/>
+            <xs:element name="UserName" type="xs:string" minOccurs="0"/>
+            <xs:element name="CountryID" type="xs:short"/>
+            <xs:element name="Address" type="xs:string" minOccurs="0"/>
+            <xs:element name="BirthDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="EMail" type="xs:string" minOccurs="0"/>
+            <xs:element name="TelephoneNumber" type="xs:string" minOccurs="0"/>
+            <xs:element name="StatusID" type="xs:short"/>
+            <xs:element name="CreatorIP" type="xs:string" minOccurs="0"/>
+            <xs:element name="OTPEnabled" type="xs:boolean"/>
+            <xs:element name="DateModified" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="PromoCodeID" type="xs:string" minOccurs="0"/>
+            <xs:element name="UserClubCard" type="xs:string" minOccurs="0"/>
+            <xs:element name="ReferralID" type="xs:string" minOccurs="0"/>
+            <xs:element name="StatusNote" type="xs:string" minOccurs="0"/>
+            <xs:element name="TermsVersion" type="xs:string" minOccurs="0"/>
+            <xs:element name="UserLanguage" type="xs:string" minOccurs="0"/>
+            <xs:element name="GamingIndex" type="xs:short"/>
+            <xs:element name="TelephoneCode" type="xs:string" minOccurs="0"/>
+            <xs:element name="SuspendTill" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="DateRegistered" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="ActiveNotifications" type="xs:long"/>
+            <xs:element name="CanVerifyIDDoc" type="xs:boolean"/>
+            <xs:element name="PreferredCurrencyID" type="xs:short"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="logoutUser">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="logoutUserResponse">
+        <xs:sequence>
+            <xs:element name="result" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getUsersActiveSession">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getUsersActiveSessionResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:sessionItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="sessionItem">
+        <xs:sequence>
+            <xs:element name="UserID" type="xs:long"/>
+            <xs:element name="SessionID" type="xs:string" minOccurs="0"/>
+            <xs:element name="DateModified" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="LastLoginTime" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="LastAccessIP" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getActiveCurrencies">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getActiveCurrenciesResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:currencyItem" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="currencyItem">
+        <xs:sequence>
+            <xs:element name="ID" type="xs:short"/>
+            <xs:element name="Title" type="xs:string" minOccurs="0"/>
+            <xs:element name="Priority" type="xs:short"/>
+            <xs:element name="IsActive" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="idDocExists">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="documentTypeID" type="xs:short"/>
+            <xs:element name="documentID" type="xs:string" minOccurs="0"/>
+            <xs:element name="personalID" type="xs:string" minOccurs="0"/>
+            <xs:element name="countryID" type="xs:short"/>
+            <xs:element name="forUserID" type="xs:long" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="idDocExistsResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:idDocExistsResponseItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="idDocExistsResponseItem">
+        <xs:sequence>
+            <xs:element name="statusCode" type="xs:int"/>
+            <xs:element name="documentID" type="xs:long"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="addReferral">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="referralName" type="xs:string" minOccurs="0"/>
+            <xs:element name="expireDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="isSingle" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="isActive" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="addReferralResponse">
+        <xs:sequence>
+            <xs:element name="result" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getUsersIDDocumentsArchive">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="fromDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="toDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getUsersIDDocumentsArchiveResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:userdocumentArchiveItem" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="userdocumentArchiveItem">
+        <xs:sequence>
+            <xs:element name="ID" type="xs:long"/>
+            <xs:element name="DocumentTypeID" type="xs:short"/>
+            <xs:element name="DocumentNumber" type="xs:string" minOccurs="0"/>
+            <xs:element name="PersonalID" type="xs:string" minOccurs="0"/>
+            <xs:element name="CountryID" type="xs:short"/>
+            <xs:element name="DocumentURL" type="xs:string" minOccurs="0"/>
+            <xs:element name="UserId" type="xs:long"/>
+            <xs:element name="DateModified" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="IsVerified" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getDepositLimits">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getDepositLimitsResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:userlimitItem" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="userlimitItem">
+        <xs:sequence>
+            <xs:element name="ID" type="xs:long"/>
+            <xs:element name="UserId" type="xs:long"/>
+            <xs:element name="LastLimitAmount" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="PreviousLimitAmount" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="LimitHourse" type="xs:int"/>
+            <xs:element name="CreatedDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="isSelfExclude" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="lookupIDDocument">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="documentNumber" type="xs:string" minOccurs="0"/>
+            <xs:element name="personalID" type="xs:string" minOccurs="0"/>
+            <xs:element name="documentTypeID" type="xs:short"/>
+            <xs:element name="countryID" type="xs:short"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="lookupIDDocumentResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:userdocumentItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="addPromoCode">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="promoCode" type="xs:string" minOccurs="0"/>
+            <xs:element name="description" type="xs:string" minOccurs="0"/>
+            <xs:element name="startDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="endDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="isSingle" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="isActive" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="addPromoCodeResponse">
+        <xs:sequence>
+            <xs:element name="result" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getSystemPrimaryCurrency">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getSystemPrimaryCurrencyResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:currencyItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="exchange">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="sourceCurrencyID" type="xs:short" minOccurs="0"/>
+            <xs:element name="destinationCurrencyID" type="xs:short" minOccurs="0"/>
+            <xs:element name="amount" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="isReverse" type="xs:boolean"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="exchangeResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:amountResponseItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="amountResponseItem">
+        <xs:sequence>
+            <xs:element name="statusCode" type="xs:int"/>
+            <xs:element name="amount" type="xs:decimal" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getUserActiveAccount">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="accountID" type="xs:long" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getUserActiveAccountResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:useraccountItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getProvider">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="lookupProviderID" type="xs:string" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getProviderResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:providerItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="updateUsersPersonalInfo">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="name" type="xs:string" minOccurs="0"/>
+            <xs:element name="surname" type="xs:string" minOccurs="0"/>
+            <xs:element name="middleName" type="xs:string" minOccurs="0"/>
+            <xs:element name="gender" type="xs:unsignedShort"/>
+            <xs:element name="countryID" type="xs:short" minOccurs="0"/>
+            <xs:element name="address" type="xs:string" minOccurs="0"/>
+            <xs:element name="bod" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="updateUsersPersonalInfoResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:updateProfileResponseItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="updateProfileResponseItem">
+        <xs:sequence>
+            <xs:element name="responseCode" type="xs:int"/>
+            <xs:element name="fieldErrorList" type="tns:errorObjectItem" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="modificationDate" type="xs:dateTime" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="errorObjectItem">
+        <xs:sequence>
+            <xs:element name="fieldName" type="xs:string" minOccurs="0"/>
+            <xs:element name="errorCode" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getBalance">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long" minOccurs="0"/>
+            <xs:element name="currencyID" type="xs:short" minOccurs="0"/>
+            <xs:element name="isSingle" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getBalanceResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:amountResponseItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getExchangeRatesArchive">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="currencyID" type="xs:short" minOccurs="0"/>
+            <xs:element name="fromDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="toDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getExchangeRatesArchiveResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:exchangerateArchiveItem" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="exchangerateArchiveItem">
+        <xs:sequence>
+            <xs:element name="CurrencyId" type="xs:short"/>
+            <xs:element name="Buy" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="Sell" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="ModificationDate" type="xs:dateTime" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="updateExchangeRate">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="currencyID" type="xs:short" minOccurs="0"/>
+            <xs:element name="buyRate" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="sellRate" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="updateExchangeRateResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:genericResponseItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getIDDocumentsToVerifyCount">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="fromDt" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="toDt" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getIDDocumentsToVerifyCountResponse">
+        <xs:sequence>
+            <xs:element name="result" type="xs:long"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getUserInfo">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getUserInfoResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:userItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="changeUserPreferedCurrency">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="preferredCurrencyID" type="xs:short"/>
+            <xs:element name="statusNote" type="xs:string" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="changeUserPreferedCurrencyResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:genericResponseItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="checkUsersCredentials">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userName" type="xs:string" minOccurs="0"/>
+            <xs:element name="password" type="xs:string" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="checkUsersCredentialsResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:genericResponseItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getReferralsByReferralName">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="referralName" type="xs:string" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getReferralsByReferralNameResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:referralItem" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="referralItem">
+        <xs:sequence>
+            <xs:element name="ID" type="xs:string" minOccurs="0"/>
+            <xs:element name="ReferralName" type="xs:string" minOccurs="0"/>
+            <xs:element name="CreateDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="ExpireDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="IsSingle" type="xs:boolean"/>
+            <xs:element name="IsActive" type="xs:boolean"/>
+            <xs:element name="IsInvite" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="deleteIDDocument">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="docID" type="xs:long"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="deleteIDDocumentResponse">
+        <xs:sequence>
+            <xs:element name="result" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="editProvider">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="toEditProviderID" type="xs:string" minOccurs="0"/>
+            <xs:element name="providerName" type="xs:string" minOccurs="0"/>
+            <xs:element name="description" type="xs:string" minOccurs="0"/>
+            <xs:element name="permission" type="xs:long" minOccurs="0"/>
+            <xs:element name="percent" type="xs:double" minOccurs="0"/>
+            <xs:element name="surchargePercent" type="xs:double" minOccurs="0"/>
+            <xs:element name="minAmount" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="maxAmount" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="transactionIsCash" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="isActive" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="rollbackLimitMinutes" type="xs:int"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="editProviderResponse">
+        <xs:sequence>
+            <xs:element name="result" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getSelfExcludeInfo">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getSelfExcludeInfoResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:userlimitItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="lookupUserInfoInHistory">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="lookupString" type="xs:string" minOccurs="0"/>
+            <xs:element name="lookupFieldType" type="xs:short"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="lookupUserInfoInHistoryResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:userArchiveItem" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getPromoCode">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="promoCode" type="xs:string" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getPromoCodeResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:promocodeItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="promocodeItem">
+        <xs:sequence>
+            <xs:element name="ID" type="xs:string" minOccurs="0"/>
+            <xs:element name="PromoDescription" type="xs:string" minOccurs="0"/>
+            <xs:element name="StartDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="EndDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="MultiSingle" type="xs:boolean"/>
+            <xs:element name="IsActive" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getReferralCount">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="isInvite" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getReferralCountResponse">
+        <xs:sequence>
+            <xs:element name="result" type="xs:long"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getReferral">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="referralID" type="xs:string" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getReferralResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:referralItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="updateGamingIndex">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="index" type="xs:short"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="updateGamingIndexResponse">
+        <xs:sequence>
+            <xs:element name="result" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="addNewIDDocument">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="documentTypeID" type="xs:short"/>
+            <xs:element name="documentNumber" type="xs:string" minOccurs="0"/>
+            <xs:element name="personalID" type="xs:string" minOccurs="0"/>
+            <xs:element name="countryID" type="xs:short"/>
+            <xs:element name="isVerified" type="xs:boolean"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="addNewIDDocumentResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:updateProfileResponseItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getPromoCodes">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="pageIndex" type="xs:int"/>
+            <xs:element name="maxResultPerPage" type="xs:int"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getPromoCodesResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:promocodeItem" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getUsersIDDocuments">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getUsersIDDocumentsResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:userdocumentItem" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getReferrals">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="isInvite" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="pageIndex" type="xs:int"/>
+            <xs:element name="maxResult" type="xs:int"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getReferralsResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:referralItem" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="lookupIDDocumentHistory">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="documentNumber" type="xs:string" minOccurs="0"/>
+            <xs:element name="personalID" type="xs:string" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="lookupIDDocumentHistoryResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:userdocumentArchiveItem" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getUserData">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="transactionType" type="xs:short" minOccurs="0"/>
+            <xs:element name="currencyID" type="xs:short" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getUserDataResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:userDataResponseItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="userDataResponseItem">
+        <xs:sequence>
+            <xs:element name="statusCode" type="xs:int"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="UserName" type="xs:string" minOccurs="0"/>
+            <xs:element name="fullName" type="xs:string" minOccurs="0"/>
+            <xs:element name="BirthDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="GamingIndex" type="xs:short" minOccurs="0"/>
+            <xs:element name="isOTPRequired" type="xs:boolean"/>
+            <xs:element name="userDocs" type="tns:userdocumentItem" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="transactionLimit" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="userStatusID" type="xs:short"/>
+            <xs:element name="preferedCurrencyID" type="xs:short"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="updateActiveNotifications">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="activeNotifications" type="xs:long"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="updateActiveNotificationsResponse">
+        <xs:sequence>
+            <xs:element name="result" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="authenticateUserByToken">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="token" type="xs:string" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="authenticateUserByTokenResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:authByTokenResponseItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="authByTokenResponseItem">
+        <xs:sequence>
+            <xs:element name="responseCode" type="xs:int"/>
+            <xs:element name="userID" type="xs:long" minOccurs="0"/>
+            <xs:element name="userName" type="xs:string" minOccurs="0"/>
+            <xs:element name="PreferredCurrencyID" type="xs:short" minOccurs="0"/>
+            <xs:element name="userIP" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="updateIDDocument">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="documentID" type="xs:long"/>
+            <xs:element name="documentTypeID" type="xs:short"/>
+            <xs:element name="documentNumber" type="xs:string" minOccurs="0"/>
+            <xs:element name="personalID" type="xs:string" minOccurs="0"/>
+            <xs:element name="countryID" type="xs:short"/>
+            <xs:element name="isVerified" type="xs:boolean"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="updateIDDocumentResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:updateProfileResponseItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getStatuses">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="pageIndex" type="xs:int"/>
+            <xs:element name="maxResultPerPage" type="xs:int"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getStatusesResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:userstatusesItem" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="editPromoCode">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="promoCode" type="xs:string" minOccurs="0"/>
+            <xs:element name="description" type="xs:string" minOccurs="0"/>
+            <xs:element name="startDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="endDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="isSingle" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="isActive" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="editPromoCodeResponse">
+        <xs:sequence>
+            <xs:element name="result" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getIDDocumentsToVerify">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="fromDt" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="toDt" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="pageIndex" type="xs:int"/>
+            <xs:element name="maxResult" type="xs:int"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getIDDocumentsToVerifyResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:userdocumentItem" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="resetPassword">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="resetPasswordResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:genericResponseItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="updateCanVerifyIDDoc">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="canVerify" type="xs:boolean"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="updateCanVerifyIDDocResponse">
+        <xs:sequence>
+            <xs:element name="result" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getExchangeRates">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getExchangeRatesResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:exchangerateItem" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="exchangerateItem">
+        <xs:sequence>
+            <xs:element name="CurrencyId" type="xs:short"/>
+            <xs:element name="Buy" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="Sell" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="ModificationDate" type="xs:dateTime" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="lookupIDDocumentHistoryExtended">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="documentNumber" type="xs:string" minOccurs="0"/>
+            <xs:element name="personalID" type="xs:string" minOccurs="0"/>
+            <xs:element name="documentTypeID" type="xs:short"/>
+            <xs:element name="countryID" type="xs:short"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="lookupIDDocumentHistoryExtendedResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:userdocumentArchiveItem" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getUserAccessList">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long" minOccurs="0"/>
+            <xs:element name="ip" type="xs:string" minOccurs="0"/>
+            <xs:element name="fromDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="toDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getUserAccessListResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:authorizationItem" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="authorizationItem">
+        <xs:sequence>
+            <xs:element name="SessionID" type="xs:string" minOccurs="0"/>
+            <xs:element name="UserID" type="xs:long"/>
+            <xs:element name="AuthorizationIP" type="xs:string" minOccurs="0"/>
+            <xs:element name="AuthorizationDate" type="xs:dateTime" minOccurs="0"/>
+            <xs:element name="AuthorizationTypeID" type="xs:short"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getUsersTransactionLimitAmount">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="forProviderID" type="xs:string" minOccurs="0"/>
+            <xs:element name="transactionType" type="xs:short"/>
+            <xs:element name="isCash" type="xs:boolean"/>
+            <xs:element name="currencyID" type="xs:short"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getUsersTransactionLimitAmountResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:amountResponseItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="editIDDocumentPhoto">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="documentID" type="xs:long"/>
+            <xs:element name="imageUrl" type="xs:string" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="editIDDocumentPhotoResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:genericResponseItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getProviderCount">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getProviderCountResponse">
+        <xs:sequence>
+            <xs:element name="result" type="xs:long"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getPromoCodeCount">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getPromoCodeCountResponse">
+        <xs:sequence>
+            <xs:element name="result" type="xs:long"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

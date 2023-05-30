@@ -1,0 +1,20 @@
+{
+    "name": "bookiebot/api",
+    "version": "1.0.0",
+    "type": "library",
+
+    "authors": [
+        {
+            "name": ""
+        }
+    ],
+    "require": {
+        "nesbot/carbon": "*",
+        "smottt/wideimage": "dev-master",
+        "firebase/php-jwt":"*",
+        "phpmailer/phpmailer": "^5.2",
+        "apache/log4php": "^2.3",
+        "guzzlehttp/guzzle": "^5.3",
+        "hashids/hashids": "^2.0"
+    }
+}

@@ -1,0 +1,90 @@
+ErrorDocument 403 /404.php
+ErrorDocument 404 /404.php
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1%{REQUEST_URI} [R=301,QSA,NC,L]
+
+
+#Deny Directory Listings Withoyt INDEXES
+Options -Indexes
+
+#RewriteEngine on
+#RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+#RewriteRule ^(.*)$ http://%1%{REQUEST_URI} [R=301,QSA,NC,L]
+
+
+RewriteRule ^app/templates/default/view/_media/(.*)$ /_media/$1 [L,NC]
+
+# Enable Rewriting
+RewriteEngine on
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !404.php
+#RewriteRule ^.*$ / [R=404,L]
+
+#Adding Fvicon Via Htaccess
+AddType image/x-icon .ico
+
+
+
+RewriteRule ^([a-z]{2})/?$ index.php?lang=$1&%{QUERY_STRING}
+
+
+#calling controller concrete method with string parameter
+RewriteRule ^([a-z]{2})/p/(.*)/?$ index.php?lang=$1&controller=index
+
+
+#Calling Controller with init method
+RewriteRule ^([a-z]{2})/(\w+)/?$ index.php?lang=$1&controller=$2
+
+#calling controller with contcrete method
+RewriteRule ^([a-z]{2})/(\w+)/(\w+)/?$ index.php?lang=$1&controller=$2&method=$3&%{QUERY_STRING}
+
+#calling controller with contcrete method
+RewriteRule ^([a-z]{2})/(\w+)/(\w+)/ajax?$ index.php?lang=$1&controller=$2&method=$3&ajax=true
+
+
+#calling controller with contcrete method
+RewriteRule ^([a-z]{2})/(\w+)_(\w+)/(\w+)/?$ index.php?lang=$1&folder=$2&controller=$2&method=$3
+
+
+
+#calling controller concrete method with ineger parameter
+RewriteRule ^([a-z]{2})/(\w+)/(\w+)/(\d{1,7})?$ index.php?lang=$1&controller=$2&method=$3&intParam=$4
+
+#calling controller concrete method with string parameter
+RewriteRule ^([a-z]{2})/(\w+)/(\w+)/(\w+)/?$ index.php?lang=$1&controller=$2&method=$3&stringParam=$4
+
+
+<IfModule pagespeed_module>
+ModPagespeed off
+#ModPagespeedEnableFilters collapse_whitespace
+#ModPagespeedEnableFilters rewrite_images
+#ModPagespeedEnableFilters prioritize_critical_css
+#ModPagespeedEnableFilters inline_preview_images
+#ModPagespeedEnableFilters combine_css
+#ModPagespeedEnableFilters inline_css
+</IfModule>
+
+
+
+RewriteRule ^sitemap.xml/?$ index.php?controller=sitemap
+RewriteRule ^lang_([a-z]{2}).js/?$ index.php?lang=$1&controller=language
+
+
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|css|js|swf)$">
+Header set Cache-Control "max-age=290304000, public"
+</FilesMatch>
+
+# 1 DAYS
+<FilesMatch "\.(xml|txt)$">
+Header set Cache-Control "max-age=3600, public, must-revalidate"
+</FilesMatch>
+
+# HALF HOURS
+<FilesMatch "\.(html|htm|php|sr)$">
+Header set Cache-Control "max-age=3600, must-revalidate"
+</FilesMatch>
+
+

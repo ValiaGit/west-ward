@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= data.title %></title>
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+
+
+    <link rel='stylesheet' href='/css/style.css?v=2016-dec-21.1'/>
+
+    <script>
+        var cur_lang = '<%= data.cur_lang %>';
+    </script>
+</head>
+<body>
+
+<div class="container-fluid min_stat_container top_space" style="margin-bottom:30px;">
+    <div class="min_stat_item">
+        <div class="title"><%= data.languagePack.my_affiliate_id %></div>
+        <div class="amount clearfix">
+            <code><%= data.user_id %></code>
+        </div>
+    </div>
+    <div class="min_stat_item">
+        <div class="title"><%= data.languagePack.today %></div>
+        <div class="amount clearfix">
+            <span id="d"></span>
+            <div class="sign glyphicon glyphicon-eur"></div>
+        </div>
+    </div>
+    <div class="min_stat_item">
+        <div class="title"><%= data.languagePack.month %></div>
+        <div class="amount clearfix">
+            <span id="m"></span>
+            <div class="sign glyphicon glyphicon-eur"></div>
+        </div>
+    </div>
+    <div class="min_stat_item">
+        <div class="title"><%= data.languagePack.total %></div>
+        <div class="amount clearfix">
+            <span id="t"></span>
+            <div class="sign glyphicon glyphicon-eur"></div>
+        </div>
+    </div>
+    <div class="min_stat_item">
+        <select class="form-control" id="select_level">
+            <option value=""><%= data.languagePack.filter_by_level %></option>
+            <option value="1">─ <%= data.languagePack.level %> 1</option>
+            <option value="2">─ <%= data.languagePack.level %> 2</option>
+            <option value="3">─ <%= data.languagePack.level %> 3</option>
+            <option value="4">─ <%= data.languagePack.level %> 4</option>
+            <option value="5">─ <%= data.languagePack.level %> 5</option>
+        </select>
+    </div>
+</div>
+
+
+<div class="">
+  <span class="" style="
+    font-size: 16px;
+">プロモーションURL:</span>
+
+    <input type="text" value="http://betplanet.win/#registration|<%= data.user_id %>" disabled="" style="
+    width: 275px;
+    border: 1px solid black;
+    padding-left: 10px;
+">
+</div>
+
+<form class="form-inline bottom_space top_space clearfix">
+
+    <div class="pull-left">
+        <div class="form-group">
+            <label for="from_date"><%= data.languagePack.from %>:</label>
+            <input type="text" class="form-control datapicker" id="from_date" value="<%= data.monthbefore %>">
+        </div>
+        <div class="form-group">
+            <label for="to_date"><%= data.languagePack.to %>:</label>
+            <input type="text" class="form-control datapicker" id="to_date" value="<%= data.today %>">
+        </div>
+        <button type="submit" class="btn btn-default" id="dateSubmit"><%= data.languagePack.select %></button>
+    </div>
+
+    <div class="pull-right user_search">
+        <div class="form-group search-group">
+            <input type="text" class="form-control" id="user_id" value=""
+                   placeholder="<%= data.languagePack.user_id %>">
+            <span id="searchclear" class="glyphicon glyphicon-remove-circle" title="Reset"></span>
+        </div>
+        <div class="btn btn-default" id="searchSubmit"><%= data.languagePack.search %></div>
+    </div>
+
+</form>
+
+
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <!--<th><%= data.languagePack.user_id %></th>-->
+        <th><%= data.languagePack.user_email %></th>
+        <th><%= data.languagePack.country %></th>
+        <th><%= data.languagePack.profit %> (EUR)</th>
+        <th><%= data.languagePack.level %></th>
+        <th><%= data.languagePack.affiliate_type %></th>
+    </tr>
+    </thead>
+    <tbody id="childs">
+
+    </tbody>
+</table>
+
+<div id="pagination" class="text-right"></div>
+
+<div id="graph_container"></div>
+
+<script>
+    var jwtoken = '<%= data.token %>';
+</script>
+
+<script src="/js/affiliates.js?v=2016-dec-21.1"></script>
+<script src="/js/controller.js?v=2016-dec-21.1"></script>
+
+</body>
+</html>

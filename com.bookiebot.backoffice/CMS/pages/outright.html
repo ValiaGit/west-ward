@@ -1,0 +1,84 @@
+<!-- Page header -->
+<div class="page-header">
+    <div class="page-title">
+        <h3>Outright<small> Manage match and oddtype data</small></h3>
+    </div>
+</div>
+<!-- /page header -->
+
+<div class="tabbable">
+
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#matchestab"  data-controller="outright.initEdit" data-toggle="tab"><i class="icon-accessibility"></i> Outright</a></li>
+        <li><a href="#competitorstab" data-controller="outrightcompetitors" data-toggle="tab"><i class="icon-stack"></i> Competitors</a></li>
+    </ul>
+
+
+    <div class="tab-content with-padding">
+        <div class="tab-pane active" id="matchestab">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h6 class="panel-title"><i class="icon-menu3"></i>
+                        <p style="width:700px">
+                            <input id="SportId" type="text" />
+                            <input id="CategoryId" type="text" />
+                            <input id="TournamentId" type="text" />
+                            <input id="MatchId" type="text" />
+
+                            <a id="ShowGrid" class="_">Process</a>
+                        </p>
+                    </h6>
+                </div>
+
+                <div class="panel-body" id="MatchesContent">
+                    <div id="MatchesGrid">
+                        <h6 style="text-align:center;">Select Tournament to show grid</h6>
+                    </div>
+
+                    <hr/>
+                    <div id="MatchesOddsGrid">
+
+                    </div>
+
+                    <div id="MatchesOddTypePopup"></div>
+
+                    <script type="text/x-kendo-template" id="NewOddTypeForMatchTPL">
+                        <div id="details-container">
+                            <h2>New OddType</h2>
+                            <input type="text" class="form-control" />
+                        </div>
+                    </script>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="tab-pane" id="competitorstab">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h6 class="panel-title">
+                        <p style="width:700px">
+                            <input id="CompetitorsSportId" type="text" />
+                            <a id="ShowCompetitorsGrid" class="_">Process</a>
+                        </p>
+                    </h6>
+                </div>
+
+                <div class="panel-body" id="MatchesContent">
+                    <div id="CompetitorsGrid">
+                        <h6 style="text-align:center;">Select Sport to show grid</h6>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div><!--.tab-content-->
+
+
+</div><!--.tabbable-->
+

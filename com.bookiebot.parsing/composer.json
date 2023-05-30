@@ -1,0 +1,13 @@
+{
+    "version": "1.0.0",
+    "require": {
+        "hashids/hashids": "^2.0",
+        "nesbot/carbon": "^1.22",
+        "joshcam/mysqli-database-class": "^2.7"
+    },
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
+    }
+}

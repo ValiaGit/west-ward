@@ -1,0 +1,66 @@
+.table-custom {
+  margin-bottom: 0;
+
+  &.table-custom-border {
+    > tbody {
+      > tr {
+        > td {
+          border-bottom:1px solid #e1e1e1;
+          border-right: 1px solid #e1e1e1;
+
+          &:last-of-type {
+            border-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  > thead {
+    > tr  {
+      > th {
+        background-color: #e9eef3;
+        color:#515f6e;
+        border-top: 1px solid #e0e0e0 !important;
+        border-bottom: 0;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  > tbody {
+    > tr {
+      > td {
+        background-color: #f4f4f4;
+        border-top-color:#e1e1e1;
+        color:#5a5a5a;
+        vertical-align: middle;
+        
+        &.white {
+          background-color: #fff;
+        }
+
+      }
+    }
+  }
+  
+  > tfoot {
+    > tr {
+      > td {
+        background-color: #eeeeee;
+        color:#898989;
+
+        &.large-space {
+          padding: 20px;
+        }
+
+      }
+    }
+  }
+  
+}
+
+.table-access {
+  border:1px solid #e1e1e1;
+  margin-bottom: 20px;
+}

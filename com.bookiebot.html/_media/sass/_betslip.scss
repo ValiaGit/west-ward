@@ -1,0 +1,402 @@
+.betslip {
+	background: transparent;
+	border: none;
+	@include box-shadow(0);
+	@include border-radius(0);
+	padding-top: 46px;
+
+	.betslip-message {
+		color: white;
+		display: none;
+		@include border-radius(4px);
+		padding: 10px 15px;
+		overflow: hidden;
+
+		&.error {
+			@include background(image-url('pattern.png'), linear-gradient(#a53333, #992f2f));
+		}
+
+		&.success {
+			@include background(image-url('pattern.png'), linear-gradient(#a53333, #992f2f));
+		}
+	}
+
+	.has-error {
+		.betslip-message.error {
+			display: block;
+		}
+	}
+
+	.has-success {
+		.betslip-message.success {
+			display: block;
+		}
+	}
+
+	.betslip-spinner {
+		position: relative;
+
+		.input-odd {
+			padding-right: 15px;
+		}
+
+		.num-btn {
+			background: transparent;
+			position: absolute;
+			right: 0;
+			width: 12px;
+			height: 9px;
+			cursor: pointer;
+			@include user-select(none);
+
+			&:after {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-left: -4px;
+				margin-top: -2px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				content: '';
+			}
+
+			&:hover {
+				@include opacity(0.8);
+			}
+		}
+
+		.up {
+			top: 1px;
+
+			&:after {
+				border-width: 0 3px 3px 3px;
+				border-color: transparent transparent #ddd transparent;
+			}
+		}
+
+		.down {
+			bottom: 1px;
+
+			&:after {
+				border-width: 3px 3px 0 3px;
+				border-color: #ddd transparent transparent transparent;
+				margin-top: -3px;
+			}
+		}
+	}
+
+	.has-back {
+		.betslip-buttons,
+		.betslip_back {
+			display: block;
+		}
+	}
+
+	.has-lay {
+		.betslip-buttons,
+		.betslip_lay {
+			display: block;
+		}
+	}
+
+	.betslip_back,
+	.betslip_lay,
+	.betslip-buttons {
+		display: none;
+	}
+
+	.betlip_placeholder {
+		display: block;
+	}
+
+	.empty {
+
+		.betlip_placeholder {
+			display: block;
+		}
+	}
+
+	.container-fluid {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.panel-heading {
+		color: white;
+		font-size: 16px;
+		padding: 0;
+		border: 0;
+	}
+
+	.panel-body {
+		background: #1e1e1e;
+		@include border-radius(5px);
+		color: #787878;
+		padding: 5px;
+	}
+
+	.ticket_item {
+		@include border-radius(4px);
+		margin-right: 0;
+		margin-left: 0;
+		margin-bottom: 5px;
+		padding-top: 6px;
+		padding-bottom: 6px;
+	}
+
+	.ticket_wrapper {
+		border-bottom: 1px solid #232323;
+	}
+
+	.ticket_header {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.odds_holder {
+		padding: 0;
+	}
+
+	.ticket_title {
+		padding: 12px 0 0 15px;
+		font-size: 12px;
+		color: white;
+	}
+
+	.ticket_buttons {
+		text-align: right;
+		float: right;
+		padding: 0;
+
+		a {
+			border: 1px solid rgba(#232323, 0.8);
+			border-right-width: 0;
+			border-top-width: 0;
+			text-align: center;
+			display: block;
+			height: 24px;
+			width: 27px;
+			float: left;
+
+			.icon {
+				position: relative;
+				top: 6px;
+			}
+
+			&:last-child {
+				.icon {
+					top: 7px;
+				}
+			}
+
+			&:hover {
+				background-color: rgba(white, 0.1);
+			}
+		}
+	}
+
+	.betslip_lay {
+		.odds_holder {
+			background-color: #0e5496;
+		}
+
+		.col-th {
+			em {
+				color: #3174b6;
+			}
+		}
+
+		.div-team {
+			em {
+				color: #8dadcc;
+			}
+		}
+	}
+
+	.betslip_back {
+		.odds_holder {
+			background-color: #648e26;
+		}
+
+		.col-th {
+			em {
+				color: #658d29;
+			}
+		}
+
+		.div-team {
+			em {
+				color: #c9deab;
+			}
+		}
+	}
+
+	.div-team {
+		padding-left: 16px;
+		font-size: 11px;
+
+		em {
+			display: block;
+		}
+
+		&.text-hidden {
+			text-overflow: ellipsis;
+			overflow: hidden;
+			white-space: nowrap;
+		}
+
+		strong {
+			display: block;
+			color: #424242;
+			font-size: 12px;
+			margin-bottom: 2px;
+		}
+	}
+
+	.col {
+		padding-left: 5px;
+		padding-right: 5px;
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.col-bs {
+		vertical-align: bottom;
+		padding: 4px 2px 0;
+
+		&.profit {
+			text-align: center;
+			font-weight: bold;
+			padding: 7px 5px 3px;
+			font-size: 12px;
+			color: white;
+		}
+	}
+
+	.col-th {
+		text-align: center;
+		padding-left: 0;
+		padding-right: 0;
+		font-size: 11px;
+		color: #656565;
+
+		&:first-child {
+			padding-left: 15px;
+			text-align: left;
+			font-size: 12px;
+		}
+
+		em {
+			font-weight: bold;
+		}
+	}
+
+	.no-padding {
+		margin-left: 0;
+		margin-right: 0;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+
+	.betslip-buttons {
+		padding: 5px;
+		text-align: right;
+	}
+
+	.liability {
+		color: #656565;
+		vertical-align: text-bottom;
+		padding: 10px 0 15px;
+		font-size: 14px;
+
+		.liability-total {
+			vertical-align: text-bottom;
+			color: #d9d9d9;
+			font-size: 16px;
+		}
+	}
+
+	.betlip_placeholder {
+		padding: 10px;
+		font-size: 12px;
+		display: none;
+	}
+
+  .betslip-spinner-col {
+    padding:5px 2px 0px 2px;
+  }
+
+  .betslip-stake-col {
+    padding:5px 2px 0px 2px;
+  }
+
+
+  .nav-tabs {
+		margin-bottom: -1px;
+		border: 0 none;
+		display: table;
+		width: 100%;
+
+		li {
+			vertical-align: middle;
+			display: table-cell;
+			float: none;
+
+			a {
+				@include box-sizing(border-box);
+				background-color: transparent;
+				border: 1px solid transparent;
+				text-transform: uppercase;
+				border-bottom-width: 0;
+				text-align: center;
+				line-height: 31px;
+				font-size: 11px;
+				padding: 0 10px;
+				display: block;
+				color: #adadad;
+				height: 33px;
+
+				&:hover, em {
+					color: white;
+				}
+			}
+
+			&.active {
+				a {
+					@include border-top-radius(3px);
+					background-color: #232323;
+					border-bottom-width: 0;
+					border-color: #151515;
+					color: white;
+				}
+			}
+		}
+	}
+
+	.tab-content {
+		padding: 0 4px 0 1px;
+
+		.tab-pane {
+			.panel-body {
+				@include border-radius(3px);
+				background-color: #232323;
+				border: 1px solid #151515;
+				padding: 5px 0;
+			}
+
+			&:first-child {
+				.panel-body {
+					@include border-top-left-radius(0);
+				}
+			}
+
+			&:last-child {
+				.panel-body {
+					@include border-top-right-radius(0);
+				}
+			}
+		}
+	}
+}

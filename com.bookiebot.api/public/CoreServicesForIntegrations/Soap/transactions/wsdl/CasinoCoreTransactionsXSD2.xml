@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2.5-b01 . -->
+<xs:schema xmlns:tns="http://integration.casinocore.singular.uk/" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           version="1.0" targetNamespace="http://integration.casinocore.singular.uk/">
+
+    <xs:element name="genericResponseItem" type="tns:genericResponseItem"/>
+
+    <xs:complexType name="genericResponseItem">
+        <xs:sequence>
+            <xs:element name="responseCode" type="xs:string"/>
+            <xs:element name="returnValue" type="xs:string" minOccurs="0"/>
+            <xs:element name="returnValueLong" type="xs:long" minOccurs="0"/>
+            <xs:element name="description" type="xs:string" minOccurs="0"/>
+            <xs:element name="modificationDate" type="xs:dateTime" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

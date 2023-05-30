@@ -1,0 +1,15 @@
+{
+    "name": "bookiebot/api",
+
+    "type": "library",
+
+    "authors": [
+        {
+            "name": ""
+        }
+    ],
+    "require": {
+        "nesbot/Carbon": "*"
+    }
+}
+

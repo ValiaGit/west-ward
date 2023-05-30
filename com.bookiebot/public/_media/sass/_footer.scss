@@ -1,0 +1,88 @@
+@import "compass/layout/sticky-footer";
+@include sticky-footer($footer-height);
+
+
+.footer {
+
+	.footer-nav {
+		background: #f9f9f9;
+		border-top: 1px solid #dedede;
+		padding-top: 15px;
+		padding-bottom: 15px;
+
+		.nav {
+			padding-top: 6px;
+		}
+
+		li {
+			margin-right: 15px;
+
+			a {
+				text-transform: uppercase;
+				font-size: 11px;
+				color: #707070;
+				padding: 0;
+			}
+
+			&.active,
+			&:hover {
+				a {
+					background: none;
+					color: #000;
+				}
+			}
+		}
+
+	}
+
+	.footer-content {
+		background: #f4f4f4;
+		border-top: 1px solid #dedede;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		@include box-sizing(border-box);
+
+		h3 {
+			color: #606060;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+			line-height: 140%;
+		}
+
+		p {
+			color: #8d8d8d;
+			font-size: 11px;
+			margin-bottom: 20px;
+		}
+
+		strong {
+			font-weight: normal;
+			color: #494949;
+		}
+	}
+
+	.contact-phone {
+		display: inline-block;
+		vertical-align: middle;
+		color: #6d6d6d;
+		text-transform: uppercase;
+
+		.phone-number {
+			font-size: 20px;
+
+			em {
+				font-style: normal;
+				color: #3f3f3f;
+				font-weight: bold;
+			}
+		}
+	}
+
+	.copyright {
+		vertical-align: middle;
+		display: inline-block;
+		color: #828181;
+		font-size: 12px;
+		padding-left: 10px;
+	}
+}

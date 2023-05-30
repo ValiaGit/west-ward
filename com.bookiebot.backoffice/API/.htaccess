@@ -1,0 +1,34 @@
+
+#Deny Directory Listings Withoyt INDEXES
+Options -Indexes
+
+# Enable Rewriting
+RewriteEngine on
+
+
+
+
+#if we want to call service uder subfolder
+#to call service at: /servicesRootDir/user/session.service.php
+#we should request url like this: /API/user:session/login
+RewriteRule ^(\w+.\w+)/(\w+)/?$ index.php?service=$1&method=$2
+
+
+#if we want to call service uder subfolder
+#to call service at: /servicesRootDir/user/session.service.php
+#we should request url like this: /API/user:session/login
+#RewriteRule ^(\w+.\w+)/(\w+)/(.*)/?$ index.php?service=$1&method=$2&route=$3
+
+
+
+#call service directly in services root folder
+#to call service at: /servicesRootDir/settings.service.php
+#we should request url like this: /dir/API/settings/getSettingsList
+RewriteRule ^(\w+)/(\w+)/?$ index.php?service=$1&method=$2
+
+
+#to call service at: /servicesRootDir/settings.service.php
+#we should request url like this: /dir/API/settings/getSettingsList
+#RewriteRule ^(\w+)/(\w+)/(.*)?$ index.php?service=$1&method=$2&route=$3
+
+

@@ -1,0 +1,21 @@
+#block-billing-details, #block-delivery-details{
+    display:none;
+}
+
+body {
+    background: #fffb85;
+}
+
+
+#paymentlogos ul li:nth-child(1),
+#paymentlogos ul li:nth-child(2),
+#paymentlogos ul li:nth-child(3),
+#paymentlogos ul li:nth-child(4),
+#paymentlogos ul li:nth-child(5),
+#paymentlogos ul li:nth-child(6),
+#paymentlogos ul li:nth-child(7),
+#paymentlogos ul li:nth-child(8)
+
+{
+    display:none;
+}

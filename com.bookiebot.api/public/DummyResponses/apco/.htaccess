@@ -1,0 +1,4 @@
+# Enable Rewriting
+RewriteEngine on
+
+RewriteRule    ^success-([A-Za-z0-9-]+)\.php    successful.php?local=fsV2&transaction=$1 [NC,L]

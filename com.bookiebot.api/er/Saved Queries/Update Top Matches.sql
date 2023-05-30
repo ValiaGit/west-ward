@@ -1,0 +1,1 @@
+UPDATE betting_match set top =1 where status=1 and starttime > NOW() ORDER BY rand() LIMIT 15;

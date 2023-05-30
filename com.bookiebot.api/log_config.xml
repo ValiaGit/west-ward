@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns="http://logging.apache.org/log4php/">
+
+
+    <appender name="app_debug" class="LoggerAppenderFile">
+        <param name="file" value="/Users/shako/Projects/Westward/com.bookiebot.api/logs/debug.log" />
+
+
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%date %logger %-5level %msg%n" />
+        </layout>
+
+        <filter class="LoggerFilterLevelMatch">
+            <param name="levelToMatch" value="debug" />
+        </filter>
+
+        <filter class="LoggerFilterLevelRange">
+            <param name="levelMin" value="debug" />
+            <param name="levelMax" value="debug" />
+        </filter>
+
+    </appender>
+
+    <appender name="app_info" class="LoggerAppenderFile" threshold="info" >
+        <param name="file" value="/Users/shako/Projects/Westward/com.bookiebot.api/logs/info.log" />
+
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%date %logger %-5level %msg%n" />
+        </layout>
+
+        <filter class="LoggerFilterLevelMatch">
+            <param name="levelToMatch" value="info" />
+        </filter>
+
+        <filter class="LoggerFilterLevelRange">
+            <param name="levelMin" value="info" />
+            <param name="levelMax" value="info" />
+        </filter>
+    </appender>
+
+
+
+    <appender name="app_warn" class="LoggerAppenderFile" threshold="warn" >
+        <param name="file" value="/Users/shako/Projects/Westward/com.bookiebot.api/logs/warn.log" />
+
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%date %logger %-5level %msg%n" />
+        </layout>
+
+        <filter class="LoggerFilterLevelMatch">
+            <param name="levelToMatch" value="warn" />
+        </filter>
+
+        <filter class="LoggerFilterLevelRange">
+            <param name="levelMin" value="warn" />
+            <param name="levelMax" value="warn" />
+        </filter>
+    </appender>
+
+
+
+    <appender name="app_error" class="LoggerAppenderFile" threshold="error" >
+        <param name="file" value="/Users/shako/Projects/Westward/com.bookiebot.api/logs/error.log" />
+        <filter class="LoggerFilterLevelMatch">
+            <param name="levelToMatch" value="warn" />
+        </filter>
+
+        <filter class="LoggerFilterLevelRange">
+            <param name="levelMin" value="error" />
+            <param name="levelMax" value="error" />
+        </filter>
+    </appender>
+
+
+
+    <appender name="app_fatal" class="LoggerAppenderFile" threshold="fatal" >
+        <param name="file" value="/Users/shako/Projects/Westward/com.bookiebot.api/logs/fatal.log" />
+
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%date %logger %-5level %msg%n" />
+        </layout>
+
+        <filter class="LoggerFilterLevelMatch">
+            <param name="levelToMatch" value="fatal" />
+        </filter>
+
+        <filter class="LoggerFilterLevelRange">
+            <param name="levelMin" value="fatal" />
+            <param name="levelMax" value="fatal" />
+        </filter>
+    </appender>
+
+
+    <root>
+        <appender_ref ref="app_debug" />
+        <appender_ref ref="app_info" />
+        <appender_ref ref="app_error" />
+        <appender_ref ref="app_warn" />
+        <appender_ref ref="app_fatal" />
+    </root>
+
+
+
+
+
+</configuration>

@@ -1,0 +1,31 @@
+.margin-top {
+    margin-top: 35px;
+}
+
+.info-buttons a.active{
+    color: #3792A8;
+    border-color: #d5d5d5;
+}
+
+a.gray {
+    color: #888;
+}
+
+.align-right{
+    text-align: right;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.clear-margins {
+    margin: 0!important;
+    padding: 0!important;
+}
+
+.k-animation-container, .k-widget, .k-widget *, .k-animation-container *, .k-widget *:before, .k-animation-container *:after, .k-block .k-header, .k-list-container{
+    -webkit-box-sizing: inherit!important;
+    -moz-box-sizing: inherit!important;
+    /* box-sizing: content-box; */
+}

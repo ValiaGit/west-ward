@@ -1,0 +1,276 @@
+.btn {
+	outline: 0 !important;
+}
+
+.btn-add-friend {
+	z-index: 1;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -15px;
+}
+
+.btn-blue {
+	color: white;
+	font-weight: bold;
+	@include background(linear_gradient(#2e81cd, #1668b5));
+	@include box-shadow(inset 0 1px 0 0 rgba(white, 0.1), 0 1px 0 0 rgba(black, 0.1));
+	border-color: #18446d;
+
+	&:hover {
+		color: white;
+		background: #1668b5;
+	}
+
+	&:focus,
+	&:active {
+		color: white;
+		@include background(linear_gradient(#2e81cd, #1668b5));
+	}
+}
+
+.btn-logout {
+	margin: 12px 0 0 15px;
+	padding: 0 25px;
+	height: 26px;
+}
+
+.btn-dark-blue {
+	@include background(linear_gradient(#2665a0, #0d4b87));
+	color: white;
+
+	&:hover,
+	&:active {
+		background: #0d4b87;
+		color: white;
+	}
+
+	&:focus {
+		color: white;
+	}
+}
+
+.btn-silver {
+	@include background(linear_gradient(#fefefe, #d4d4d4));
+	color: #3e3d3d;
+	border: none;
+
+	&:hover {
+		color: #3e3d3d;
+		background: #d4d4d4;
+	}
+
+	&:focus,
+	&:active {
+		color: #3e3d3d;
+		@include background(linear_gradient(#fefefe, #d4d4d4));
+	}
+
+}
+
+.btn-dark {
+	background: #2e2e2e;
+	color: #969696;
+	border: 1px solid #151515;
+
+	&:hover {
+		background: #353535;
+		color: #969696;
+	}
+
+	&:focus,
+	&:active {
+		background: #353535;
+		color: #969696;
+	}
+}
+
+.btn-bs-blue {
+	background: #0e5496;
+	color: #ffffff;
+	border: 1px solid #151515;
+
+	&:hover {
+		background: #1363af;
+		color: #ffffff;
+	}
+
+	&:focus,
+	&:active {
+		background: #1363af;
+		color: #ffffff;
+	}
+}
+
+.betslipButton {
+	margin-right: 3px;
+	font-size: 14px;
+	width: 152px;
+
+	&:last-child {
+		margin-right: 2px;
+	}
+}
+
+.oddBtn {
+	color: white;
+	@include border-radius(0);
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 2px 3px;
+	font-size: 12px;
+	line-height: 1.1;
+
+	&.selected {
+		position: relative;
+
+		&:after {
+			display: block;
+			width: 0;
+			height: 0;
+			border-top: 10px solid white;
+			border-left: 10px solid transparent;
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+
+	@include box-shadow(inset 0 1px 0 0 rgba(white, 0.1));
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: white;
+	}
+}
+
+.btn-odd-blue {
+	background-color: #0c4a84;
+	@include background-image(linear_gradient(rgba(white, 0.04), rgba(black, 0.04)));
+	border: none;
+
+	&:hover {
+		background: #1363af;
+	}
+
+	&:focus,
+	&:active {
+		background: #1363af;
+	}
+}
+
+.btn-odd-green {
+	background-color: #648e26;
+	@include background-image(linear_gradient(rgba(white, 0.04), rgba(black, 0.04)));
+	border: none;
+
+	&:hover {
+		background: #7fb62e;
+	}
+
+	&:focus,
+	&:active {
+		background: #7fb62e;
+	}
+}
+
+.btn-blue-shadow {
+	@include background(linear_gradient(#0e5495, #0c467e));
+	@include box-shadow(inset 0 1px 0 0 rgba(white, 0.1), 0 1px 0 0 rgba(black, 0.5));
+	@include border-radius(3px);
+	border: none;
+	padding-left: 40px;
+	padding-right: 40px;
+	color: white;
+	text-transform: uppercase;
+	font-size: 15px;
+
+	&:hover {
+		background: #0c467e;
+		color: white;
+	}
+
+	&:focus,
+	&:active {
+		@include background(linear_gradient(#0e5495, #0c467e));
+		color: white;
+	}
+
+}
+
+.btn-space {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.btn-30 {
+	height: 30px;
+	line-height: 1.2;
+}
+
+.btn-28 {
+	height: 28px;
+	line-height: 1.1;
+}
+
+.btn-profile {
+	background: #0b2844;
+	color: #c3d5e6;
+	border: none;
+
+	&:hover {
+		color: #c3d5e6;
+		background: #0d3154;
+	}
+
+	&:focus,
+	&:active {
+		background: #0b2844;
+		color: #c3d5e6;
+	}
+
+}
+
+.btn-group {
+	background: #ffffff;
+	color: #3d3d3d;
+	border: none;
+
+	&:hover {
+		color: #3d3d3d;
+		background: #f2f2f2;
+	}
+
+	&:focus,
+	&:active {
+		background: #ffffff;
+		color: #3d3d3d;
+	}
+
+}
+
+.btn-upload {
+	color: #8ca1b4;
+	background: transparent;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	margin: 0;
+	padding: 0 10px;
+
+	i {
+		color: #0c4983;
+		margin-left: 8px;
+		font-size: 16px;
+		vertical-align: middle;
+	}
+
+	em {
+		display: inline-block;
+		vertical-align: middle;
+		padding-top: 2px;
+	}
+}

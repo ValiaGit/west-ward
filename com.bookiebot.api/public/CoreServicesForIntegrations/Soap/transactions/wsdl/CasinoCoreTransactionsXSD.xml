@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2.5-b01 . -->
+<xs:schema xmlns:tns="http://transactions.casinocore.singular.uk/"
+           xmlns:ns1="http://integration.casinocore.singular.uk/" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           version="1.0" targetNamespace="http://transactions.casinocore.singular.uk/">
+
+    <xs:import namespace="http://integration.casinocore.singular.uk/"
+               schemaLocation="http://integration.casinocore.singular.uk/CasinoCoreTransactionsXSD2.xml"/>
+
+
+    <xs:element name="changeTransactionStatus" type="tns:changeTransactionStatus"/>
+
+    <xs:element name="changeTransactionStatusResponse" type="tns:changeTransactionStatusResponse"/>
+
+    <xs:element name="checkTransactionStatus" type="tns:checkTransactionStatus"/>
+
+    <xs:element name="checkTransactionStatusResponse" type="tns:checkTransactionStatusResponse"/>
+
+    <xs:element name="depositMoney" type="tns:depositMoney"/>
+
+    <xs:element name="depositMoneyResponse" type="tns:depositMoneyResponse"/>
+
+    <xs:element name="rollbackTransaction" type="tns:rollbackTransaction"/>
+
+    <xs:element name="rollbackTransactionResponse" type="tns:rollbackTransactionResponse"/>
+
+    <xs:element name="transferBetweenAccounts" type="tns:transferBetweenAccounts"/>
+
+    <xs:element name="transferBetweenAccountsResponse" type="tns:transferBetweenAccountsResponse"/>
+
+    <xs:element name="withdrawMoney" type="tns:withdrawMoney"/>
+
+    <xs:element name="withdrawMoneyResponse" type="tns:withdrawMoneyResponse"/>
+
+    <xs:element name="withdrawResponsItem" type="tns:withdrawResponsItem"/>
+
+    <xs:complexType name="withdrawMoney">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="currencyID" type="xs:short"/>
+            <xs:element name="amount" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="shouldWaitForApproval" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="providerUserID" type="xs:string" minOccurs="0"/>
+            <xs:element name="providerOppCode" type="xs:string" minOccurs="0"/>
+            <xs:element name="additionalData" type="xs:string" minOccurs="0"/>
+            <xs:element name="requesterIP" type="xs:string" minOccurs="0"/>
+            <xs:element name="statusNote" type="xs:string" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="withdrawMoneyResponse">
+        <xs:sequence>
+            <xs:element name="result" type="tns:withdrawResponsItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="withdrawResponsItem">
+        <xs:sequence>
+            <xs:element name="responseCode" type="xs:string"/>
+            <xs:element name="transactionID" type="xs:string" minOccurs="0"/>
+            <xs:element name="totalAmount" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="percentAmount" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="percent" type="xs:double" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="checkTransactionStatus">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="transactionID" type="xs:string" minOccurs="0"/>
+            <xs:element name="isCoreTransactionID" type="xs:boolean"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="checkTransactionStatusResponse">
+        <xs:sequence>
+            <xs:element name="result" type="ns1:genericResponseItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="transferBetweenAccounts">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="sourceCurrencyID" type="xs:short"/>
+            <xs:element name="destinationCurrencyID" type="xs:short"/>
+            <xs:element name="amount" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="isSourceAmount" type="xs:boolean"/>
+            <xs:element name="statusNote" type="xs:string" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="transferBetweenAccountsResponse">
+        <xs:sequence>
+            <xs:element name="result" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="depositMoney">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="userID" type="xs:long"/>
+            <xs:element name="currencyID" type="xs:short"/>
+            <xs:element name="amount" type="xs:decimal" minOccurs="0"/>
+            <xs:element name="isCardVerification" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="shouldWaitForApproval" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="providerUserID" type="xs:string" minOccurs="0"/>
+            <xs:element name="providerOppCode" type="xs:string" minOccurs="0"/>
+            <xs:element name="additionalData" type="xs:string" minOccurs="0"/>
+            <xs:element name="requesterIP" type="xs:string" minOccurs="0"/>
+            <xs:element name="statusNote" type="xs:string" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="depositMoneyResponse">
+        <xs:sequence>
+            <xs:element name="result" type="ns1:genericResponseItem" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="rollbackTransaction">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="transactionOfproviderID" type="xs:string" minOccurs="0"/>
+            <xs:element name="transactionID" type="xs:string" minOccurs="0"/>
+            <xs:element name="isCoreTransactionID" type="xs:boolean"/>
+            <xs:element name="statusNote" type="xs:string" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="rollbackTransactionResponse">
+        <xs:sequence>
+            <xs:element name="result" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="changeTransactionStatus">
+        <xs:sequence>
+            <xs:element name="providerID" type="xs:string" minOccurs="0"/>
+            <xs:element name="transactionID" type="xs:string" minOccurs="0"/>
+            <xs:element name="transactionNewStatus" type="xs:short"/>
+            <xs:element name="statusNote" type="xs:string" minOccurs="0"/>
+            <xs:element name="hash" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="changeTransactionStatusResponse">
+        <xs:sequence>
+            <xs:element name="result" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

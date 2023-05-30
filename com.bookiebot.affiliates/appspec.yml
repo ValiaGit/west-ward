@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www
+
+permissions:
+  - object: /var/www/deploy_hooks
+    pattern: "**.sh"
+    mode: 777
+    type:
+      - file
+
+hooks:
+  ApplicationStart:
+      - location: deploy_hooks/application_start.sh

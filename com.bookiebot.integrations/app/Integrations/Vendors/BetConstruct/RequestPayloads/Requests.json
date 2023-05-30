@@ -1,0 +1,154 @@
+//Not Expired
+[
+  //Authenticate
+  {
+    "OperatorId": "481",
+    "Token": "a2818fd8-ddf0-4036-94c7-4d5f393c9def",
+    "PublicKey": "MMKKLL"
+  }
+
+  ,
+
+
+  //Get Balance Request
+  {
+    "OperatorId": "481",
+    "PlayerId": "1",
+    "Token": "6cc617fb-c6fe-411f-a01f-e023d8a82fc0",
+    "PublicKey": "MMKKLL"
+  }
+
+  ,
+
+  //Withdraw
+  {
+    "OperatorId": "481",
+    "PlayerId": "1",
+    "Token": "xbXvi9R4yNZ4QOkXgazwi8ZpvjM6b{s2}dhS2aIjEX9kkl6LgOSeBOd1jMjGPeh{s1}QO0MqkiT1NA8AHyS7fnnyThUsG886FttJFV28egetQhNdP12OsCjEK2sHIOf5ebqNvK46kgsTZMwB8p5UwDZtzbPG4cIEF5pOL3Ugqmi8XgmDL0phw6EPC7l9Xkfsyqu{s1}8feDGMfXq0jusvXFXzduV7Rw==",
+    "WithdrawAmount": 4.3,
+    "Currency": "EUR",
+    "GameId": 123,
+    "RGSTransactionId": "7c366191-91b9-4dc6-848b-177c204fbd24",
+    "TypeId": 2,
+    "PublicKey": "MMKKLL"
+  }
+
+  ,
+
+  //Deposit
+  {
+    "OperatorId": "481",
+    "PlayerId": "1",
+    "Token": "6f5c171d-e445-4d07-9ce0-fc42d4c54bc8",
+    "DepositAmount": 4.6,
+    "Currency": "EUR",
+    "GameId": 123,
+    "RGSTransactionId": "7c366191-91b9-4dc6-848b-177c204fbd24",
+    "TypeId": 2,
+    "PublicKey": "MMKKLL"
+  }
+
+  ,
+
+  //WithdrawAndDeposit
+  {
+    "OperatorId": "481",
+    "PlayerId": "1",
+    "Token": "xbXvi9R4yNZ4QOkXgazwi8ZpvjM6b{s2}dhS2aIjEX9kkl6LgOSeBOd1jMjGPeh{s1}QO0MqkiT1NA8AHyS7fnnyThUsG886FttJFV28egetQhNdP12OsCjEK2sHIOf5ebqNvK46kgsTZMwB8p5UwDZtzbPG4cIEF5pOL3Ugqmi8XgmDL0phw6EPC7l9Xkfsyqu{s1}8feDGMfXq0jusvXFXzduV7Rw==",
+    "WithdrawAmount": 2,
+    "DepositAmount": 4,
+    "Currency": "EUR",
+    "GameId": 123,
+    "RGSTransactionId": "7c366191-91b9-4dc6-848b-177c204fbd24",
+    "TypeId": 2,
+    "PublicKey": "MMKKLL"
+  }
+
+  ,
+
+  //Rollback
+  {
+    "OperatorId": "481",
+    "PlayerId": "1",
+    "Token": "xbXvi9R4yNZ4QOkXgazwi8ZpvjM6b{s2}dhS2aIjEX9kkl6LgOSeBOd1jMjGPeh{s1}QO0MqkiT1NA8AHyS7fnnyThUsG886FttJFV28egetQhNdP12OsCjEK2sHIOf5ebqNvK46kgsTZMwB8p5UwDZtzbPG4cIEF5pOL3Ugqmi8XgmDL0phw6EPC7l9Xkfsyqu{s1}8feDGMfXq0jusvXFXzduV7Rw==",
+    "RGSTransactionId": 131,
+    "GameId": 2,
+    "PublicKey": "MMKKLL"
+  }
+
+
+],
+
+
+//Expired
+[
+  //Authenticate
+  {
+    "OperatorId": "481",
+    "Token": "a2818fd8-ddf0-4036-94c7-4d5f393c9def",
+    "PublicKey": "MMKKLL"
+  }
+,
+
+
+  //Get Balance Request
+  {
+    "OperatorId": "481",
+    "PlayerId": "1",
+    "Token": "xbXvi9R4yNZ4QOkXgazwi8ZpvjM6b{s2}dhS2aIjEX9kkl6LgOSeBOd1jMjGPeh{s1}QO0MqkiT1NA8AHyS7fnnyThUtQztMARRuGSAxCn4I{s1}rF0XmMAJQq8FFf9AIxl{s2}fy1{s2}G5pUHsm1xQoMeNnVKU1wremxzBGzzpyF{s2}yXTLBGt8ApwDAOjJvpybKRRu4pERbwyTU{s1}ahTND3HKtZsFbmc5J6tQ==",
+    "PublicKey": "MMKKLL"
+  },
+
+  //Withdraw
+  {
+    "OperatorId": "481",
+    "PlayerId": "1",
+    "Token": "xbXvi9R4yNZ4QOkXgazwi8ZpvjM6b{s2}dhS2aIjEX9kkl6LgOSeBOd1jMjGPeh{s1}QO0MqkiT1NA8AHyS7fnnyThUtQztMARRuGSAxCn4I{s1}rF0XmMAJQq8FFf9AIxl{s2}fy1{s2}G5pUHsm1xQoMeNnVKU1wremxzBGzzpyF{s2}yXTLBGt8ApwDAOjJvpybKRRu4pERbwyTU{s1}ahTND3HKtZsFbmc5J6tQ==",
+    "WithdrawAmount": 4.6,
+    "Currency": "EUR",
+    "GameId": 123,
+    "RGSTransactionId": "7c366191-91b9-4dc6-848b-177c204fbd24",
+    "TypeId": 2,
+    "PublicKey": "MMKKLL"
+  }
+,
+
+  //Deposit
+  {
+    "OperatorId": "481",
+    "PlayerId": "1",
+    "Token": "xbXvi9R4yNZ4QOkXgazwi8ZpvjM6b{s2}dhS2aIjEX9kkl6LgOSeBOd1jMjGPeh{s1}QO0MqkiT1NA8AHyS7fnnyThUtQztMARRuGSAxCn4I{s1}rF0XmMAJQq8FFf9AIxl{s2}fy1{s2}G5pUHsm1xQoMeNnVKU1wremxzBGzzpyF{s2}yXTLBGt8ApwDAOjJvpybKRRu4pERbwyTU{s1}ahTND3HKtZsFbmc5J6tQ==",
+    "DepositAmount": 100,
+    "Currency": "EUR",
+    "GameId": 123,
+    "RGSTransactionId": "7c366191-91b9-4dc6-848b-177c204fbd24",
+    "TypeId": 2,
+    "PublicKey": "MMKKLL"
+  },
+
+  //WithdrawAndDeposit
+  {
+    "OperatorId": "481",
+    "PlayerId": "1",
+    "Token": "xbXvi9R4yNZ4QOkXgazwi8ZpvjM6b{s2}dhS2aIjEX9kkl6LgOSeBOd1jMjGPeh{s1}QO0MqkiT1NA8AHyS7fnnyThUtQztMARRuGSAxCn4I{s1}rF0XmMAJQq8FFf9AIxl{s2}fy1{s2}G5pUHsm1xQoMeNnVKU1wremxzBGzzpyF{s2}yXTLBGt8ApwDAOjJvpybKRRu4pERbwyTU{s1}ahTND3HKtZsFbmc5J6tQ==",
+    "WithdrawAmount": 100,
+    "DepositAmount": 100,
+    "Currency": "EUR",
+    "GameId": 123,
+    "RGSTransactionId": "7c366191-91b9-4dc6-848b-177c204fbd24",
+    "TypeId": 2,
+    "PublicKey": "MMKKLL"
+  },
+
+  //Rollback
+  {
+    "OperatorId": "481",
+    "PlayerId": "1",
+    "Token": "xbXvi9R4yNZ4QOkXgazwi8ZpvjM6b{s2}dhS2aIjEX9kkl6LgOSeBOd1jMjGPeh{s1}QO0MqkiT1NA8AHyS7fnnyThUtQztMARRuGSAxCn4I{s1}rF0XmMAJQq8FFf9AIxl{s2}fy1{s2}G5pUHsm1xQoMeNnVKU1wremxzBGzzpyF{s2}yXTLBGt8ApwDAOjJvpybKRRu4pERbwyTU{s1}ahTND3HKtZsFbmc5J6tQ==",
+    "RGSTransactionId": 131,
+    "GameId": 2,
+    "PublicKey": "MMKKLL"
+  }
+
+
+]

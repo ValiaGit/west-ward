@@ -1,0 +1,12 @@
+{
+  "TransactionId": 278582379,
+  "Amount": 1.59,
+  "BetId": 13424205,
+  "BetState": 5,
+  "IsLive": true,
+  "BonusAmount": null,
+  "BonusId": null,
+  "AuthToken": "9bcb8f55-415d-48c9-a3e8-11223e69e618",
+  "TS": 1479305158,
+  "Hash": "48ff0f2572d1203fa5180462f7c521d5"
+}

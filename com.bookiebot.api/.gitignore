@@ -1,0 +1,7 @@
+# Created by .gitignore support plugin (hsz.mobi)
+.idea
+local_config.php
+config.php
+*.log
+vendor
+logs

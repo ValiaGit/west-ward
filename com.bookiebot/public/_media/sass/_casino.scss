@@ -1,0 +1,60 @@
+#casino {
+
+    $brand-color: rgb(14, 84, 150);
+
+    .casino-slider{
+        $sl-w: 100%;
+        $sl-h: 200px;
+
+        width: $sl-w;
+        height: $sl-h;
+        overflow: hidden;
+
+        .item > img {
+            width: $sl-w;
+            height: $sl-h;
+
+        }
+    }
+
+    #search {
+        margin-bottom: 15px;
+    }
+
+    .panel-branded {
+
+        border-color: #ccc;
+
+         .panel-heading {
+            background-color: $brand-color;
+            border-color: $brand-color;
+            color: #fff;
+        }
+    }
+
+    .navbar {
+        background-color: $brand-color !important;
+        border-top-right-radius: 0px !important;
+        border-top-left-radius: 0px !important;
+
+        a {
+            color: #fff;
+        }
+
+        li.active a,
+        li:hover a {
+            background-color: #f4f4f4;
+            color: $brand-color;
+        }
+
+    }
+
+
+    #slots_list .thumbnail > img {
+        width: 220px !important;
+        height: 155px !important;
+    }
+
+
+
+}

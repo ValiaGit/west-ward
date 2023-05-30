@@ -1,0 +1,25 @@
+.protection_status_text {
+    display:block;
+    float:left;
+    line-height: 1.5em;
+}
+
+.is-active-alert {
+    padding:5px !important
+}
+
+
+.care_image {
+    width: 35px;
+    height: 42px;
+    margin-right: 10px;
+}
+
+
+.error {
+    color: #a80000;
+    padding-top: 10px;
+    padding-left: 2px;
+}
+
+

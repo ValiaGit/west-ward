@@ -1,0 +1,35 @@
+
+
+#Deny Directory Listings Withoyt INDEXES
+Options -Indexes
+
+# Enable Rewriting
+RewriteEngine on
+
+
+
+
+
+RewriteRule ^(\w+\.\w+)/(\w+).sr/?$ index.php?service=$1&method=$2
+RewriteRule ^(\w+)/(\w+).sr/?$ index.php?service=$1&method=$2
+
+
+RewriteRule ^confirmations_email/init/(\w+)/(\w+)?$ confirm.php?code=$1&lang=$2
+
+
+
+
+
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|css|js|swf)$">
+Header set Cache-Control "max-age=290304000, public"
+</FilesMatch>
+
+# 1 DAYS
+<FilesMatch "\.(xml|txt)$">
+Header set Cache-Control "max-age=3600, public, must-revalidate"
+</FilesMatch>
+
+# HALF HOURS
+<FilesMatch "\.(html|htm|php|sr)$">
+Header set Cache-Control "max-age=0, must-revalidate"
+</FilesMatch>

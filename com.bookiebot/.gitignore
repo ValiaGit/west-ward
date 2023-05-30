@@ -1,0 +1,9 @@
+.idea
+.sass-cache
+templates_c
+node_modules
+local_config.php
+engine/smarty/System/
+public/app/
+config.php
+bundle.min.js

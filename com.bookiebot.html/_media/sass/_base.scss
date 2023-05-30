@@ -1,0 +1,85 @@
+html {
+	height: 100%;
+}
+
+strong {
+	font-weight: bold;
+}
+
+body {
+	background: #e6e6ea; //image-url('dark-bg.jpg') -10px 120px fixed no-repeat;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	padding-top: 50px;
+	height: 100%;
+
+	&.page-betting-history {
+		.no-space {
+			padding-left: 0;
+			padding-right: 0;
+
+			.row > div {
+				padding-right: 5px;
+				padding-left: 5px;
+			}
+
+		}
+	}
+
+	&.page-social-not {
+		.wrapper {
+			background: #0e0e0e image-url('social-not-bg.jpg') no-repeat top center;
+		}
+	}
+
+	&.page-home {
+		.wrapper {
+			background: #2e2e2e image-url('bg.jpg') no-repeat top center;
+		}
+	}
+
+	&.page-match {
+		.wrapper {
+			background: #2e2e2e;
+		}
+	}
+
+}
+
+.sticky-wrapper {
+	position: relative;
+	z-index: 1;
+}
+
+.wrapper {
+	background: #f4f4f4;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto (-$footer-height); /* the bottom margin is the negative value of the footer's height */
+}
+
+.main-container {
+	background: rgba(46, 46, 46, 0.5);
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.container-fluid {
+	&.no-space {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.home-middle {
+	padding: 28px 0;
+}
+
+.footer, .push {
+	height: $footer-height;
+}
+
+.full-width {
+	width: 100% !important;
+}

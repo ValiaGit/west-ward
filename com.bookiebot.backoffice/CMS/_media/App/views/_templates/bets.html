@@ -1,0 +1,112 @@
+<script type="text/x-kendo-template" id="BetsDetailTpl">
+
+    #
+        var bets_label = {'2':'success', '1':'info'}[bets__bet_type];
+        var bets_matched = bets_bet_amount - bets_unmatched_amount;
+        var bet_type_title = {'2':'Lay', '1':'Back'}[bets__bet_type];
+
+        var score = JSON.stringify(score_data);
+
+    #
+    <div class="well clearfix">
+
+        <div class="col-md-7">
+
+            <div class="well clearfix pull-left" >
+
+                <h4 class="clear-margins" style="font-size:14px;"><small>#= sports_title # (#=  matches_status #)</small><br />#=  home #   #if(away) {# - #=  away # #}# </h4>
+                <p>
+                    MatchId: #=matches__id#
+                    <br/>
+                    Category: #=category_title#
+
+                    <br/>
+                    Tournament: #=tournament_title#
+                </p>
+                <p style="font-size:13px">
+
+
+
+
+                    BetradarID: #= betradar_event_id #
+                    <br/>
+                    Type: #= bets__bet_type #
+
+
+                        <br/> Liability:
+                                # if(bets__bet_type == 'Lay') {#
+                                    #=((bets_bet_amount*bets_bet_odd)-bets_bet_amount).toFixed(2)# €
+                                #}else{#
+                                    #=(bets_bet_amount/100)#€
+                                #}#
+
+
+                    #if (type_title) {#
+                        <br/>
+                        Market Title: #=type_title#
+                    #}#
+
+                    #if (type_title) {#
+                        <br/>
+                        Selection: #=odd_title#
+                    #}#
+
+                    <br/>
+                    Selection Status: #= mos #
+                    <br />
+                    Odd Id: #= match__odds_id #
+                </p>
+
+
+            </div>
+
+
+            <div class="pull-left clearfix" style="margin-left:30px;">
+
+                <h6 class="heading-hr">Ticket ID: #= id # </h6>
+                <h5 class="heading-hr">User: #= users__username # <small>(#= users__username #)</small></h5>
+
+                <h6 class="heading-hr">
+                    Odd: #= bets_bet_odd # <span class="label label">#= bets__bet_type #</span>
+                </h6>
+
+
+                <div class="pull-left">
+
+                    <div class="statistics-info">
+                        <a href="javascript: return false;" title="" class="bg-warning"><i class="icon-coin"></i></a>
+                        <strong>#= kendo.toString(bets_bet_amount/100).trunc(2) #€</strong>
+                    </div>
+                    <div class="progress progress-micro">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="#= bets_matched #" aria-valuemin="0" aria-valuemax="#= bets_bet_amount #" style="width: #= bets_matched/bets_bet_amount*100 # %;"></div>
+                    </div>
+
+                        Unmatched #= kendo.toString(bets_unmatched_amount/100).trunc(2) # €
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <div class="col-md-5 pull-right">
+            <div class="matching_data"></div>
+            <div class="canceled_data"></div>
+            <div class="private_data"></div>
+            <div class="private_data_sent"></div>
+        </div>
+
+    </div>
+
+    # if(score!="null"){ #
+    <div class="well" style="margin-top: 10px;">
+        <h6>Score Data</h6>
+        <pre>#= score #</pre>
+    </div>
+    # } #
+
+</script>

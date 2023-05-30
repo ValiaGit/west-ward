@@ -1,0 +1,116 @@
+<!-- Page header -->
+<div class="page-header">
+    <div class="page-title">
+        <h3>Welcome to Bookiebot
+            <small>Content Management System</small>
+        </h3>
+    </div>
+
+
+</div>
+<!-- /page header -->
+
+
+<ul class="page-stats list-justified" style="width: 500px;">
+
+    <li class="bg-success" id="users_liabilities">
+        <div class="page-stats-showcase">
+            <span>TOTAL USERS LIABILITIES IN SYSTEM</span>
+            <h2 class="value"></h2>
+        </div>
+        <div class="bar-default chart"></div>
+    </li>
+</ul>
+
+
+<!-- Deposit statistics -->
+<ul class="page-stats list-justified" style="width: 500px;">
+    <li class="bg-primary" id="deposits_amount">
+        <div class="page-stats-showcase">
+            <span>Deposits Amount</span>
+            <h2 class="value"></h2>
+        </div>
+        <div class="bar-default chart"></div>
+    </li>
+
+    <li class="bg-primary" id="deposits_count">
+        <div class="page-stats-showcase">
+            <span>Deposists Count</span>
+            <h2 class="value"></h2>
+        </div>
+        <div class="bar-default chart"></div>
+    </li>
+</ul>
+
+<!-- Withdarw statistics -->
+<ul class="page-stats list-justified" style="width: 500px;">
+    <li class="bg-danger" id="withdrawals_amount">
+        <div class="page-stats-showcase">
+            <span>withdrawals_amount</span>
+            <h2 class="value"></h2>
+        </div>
+        <div class="bar-default chart"></div>
+    </li>
+
+    <li class="bg-danger" id="withdrawals_count">
+        <div class="page-stats-showcase">
+            <span>withdrawals_count</span>
+            <h2 class="value"></h2>
+        </div>
+        <div class="bar-default chart"></div>
+    </li>
+</ul>
+
+<!-- Bets statistics -->
+<ul class="page-stats list-justified" style="width: 500px;">
+    <li class="bg-danger" id="bets_amount">
+        <div class="page-stats-showcase">
+            <span>Bets Amount</span>
+            <h2 class="value"></h2>
+        </div>
+        <div class="bar-default chart"></div>
+    </li>
+
+    <li class="bg-danger" id="bets_count">
+        <div class="page-stats-showcase">
+            <span>Bets Count</span>
+            <h2 class="value"></h2>
+        </div>
+        <div class="bar-default chart"></div>
+    </li>
+</ul>
+
+<!-- Matched Bets statistics -->
+<ul class="page-stats list-justified" style="width: 500px;">
+    <li class="bg-danger" id="matched_bets_amount">
+        <div class="page-stats-showcase">
+            <span>matched_bets_amount</span>
+            <h2 class="value"></h2>
+        </div>
+        <div class="bar-default chart"></div>
+    </li>
+
+    <li class="bg-danger" id="matched_bets_count">
+        <div class="page-stats-showcase">
+            <span>matched_bets_count</span>
+            <h2 class="value"></h2>
+        </div>
+        <div class="bar-default chart"></div>
+    </li>
+</ul>
+
+
+<ul class="page-stats list-justified" style="width: 500px;">
+
+    <li class="bg-success" id="users">
+        <div class="page-stats-showcase">
+            <span>TOTAL USERS IN SYSTEM</span>
+            <h2 class="value"></h2>
+        </div>
+        <div class="bar-default chart"></div>
+    </li>
+
+
+</ul>
+<span data-icon="&#xe0a3;" style="font-size:15px;cursor: pointer;" onclick="App.getController('dashboard').init()"> Refresh</span>
+<!-- /page statistics -->

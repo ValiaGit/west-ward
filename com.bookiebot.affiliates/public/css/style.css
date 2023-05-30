@@ -1,0 +1,90 @@
+body {
+    background-color: transparent;
+}
+
+.bottom_space {
+    margin-bottom: 20px;
+}
+
+.top_space {
+    margin-top: 20px;
+}
+
+.fordelete {
+    color: red;
+}
+
+.min_stat_container {
+    margin-bottom: 50px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.min_stat_item {
+    float: left;
+    width: 20%;
+    height: 60px;
+    text-align: center;
+    box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.5);
+}
+
+.min_stat_item code{
+    font-size: 14px;
+}
+
+.min_stat_item .title {
+    line-height: 25px;
+    height: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #0e5496;
+}
+
+.min_stat_item .amount {
+    display: block;
+    margin: 0 auto;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    color: #318209;
+}
+
+.min_stat_item .sign {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #000;
+}
+
+.min_stat_item #select_level {
+    margin: 13px auto 0;
+    width: 80%
+}
+
+thead th {
+    color: #0e5496;
+}
+
+#searchclear {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    bottom: 0;
+    height: 14px;
+    margin: auto;
+    font-size: 14px;
+    cursor: pointer;
+    color: #ccc;
+    display: none;
+}
+
+.search-group {
+    position: relative;
+}
+
+#pagination{
+    margin-top: -25px;
+    margin-bottom: 20px;
+}

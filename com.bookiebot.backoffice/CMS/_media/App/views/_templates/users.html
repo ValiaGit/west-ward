@@ -1,0 +1,156 @@
+<script type="text/x-kendo-template" id="UserDetailsTpl">
+    <div class="well">
+    <div class="media-body media">
+
+            <div class="col-md-2">
+
+                <h6>
+                    {{username}} <small>{{gender}}</small>
+
+                </h6>
+
+                <p>
+                    {{email}}
+                </p>
+
+                <p>
+                    <span class="btn btn-success">
+                        <i class="_icon-coin"></i>
+                        Balance:
+                        #if(balance){#
+                        #=balance.toFixed(2)#
+                        #}else{#
+                        0.00
+                        #}#
+€
+                    </span>
+                </p>
+
+
+            </div>
+
+            <div class="col-md-3">
+
+                <ul class="icons-list">
+
+
+                    <li><i class="icon-mail"></i>
+                    Email Confirmed:
+                        #if(is_email_confirmed){#
+                        Yes
+                        #}else{#
+                        No
+                        #}#
+                    </li>
+                    <li><i class="icon-vcard"></i>
+                    Personal Doc Confirmed:
+                    <label class="checkbox-inline">
+                        <input id="is_passport_confirmed{{core_users__id}}" type="checkbox" data-id="{{core_users__id}}" # if (is_passport_confirmed == 1) { # checked="checked" # } # class="passport_verification switch switch-mini" data-off-color="danger" data-on-label="Verified" data-off-label="Unverified" >
+                    </label>
+                    </li>
+                    <li><i class="icon-phone"></i>
+                        Phone Confirmed:
+                        #if(is_phone_confirmed){#
+                            Yes
+                        #}else{#
+                            No
+                        #}#
+                    </li>
+
+                    <li><i class="icon-flag"></i>
+                        CountryId: {{long_name}}
+                    </li>
+                    <li><i class="icon-home2"></i>
+                    Address: {{address}}
+                    </li>
+                    <li><i class="icon-home2"></i>
+                    Address Zip: {{address_zip_code}}
+                    </li>
+
+                    <li>
+                        <i class="icon-phone"></i>
+                        Phone: {{phone}}
+                    </li>
+                    <li>
+                        <i class="icon-signup"></i>
+                        Last Login: {{last_login_date}}
+                    </li>
+
+                    <li>
+                        <i class="icon-star3"></i>
+                        BirthDate: {{birthdate}}
+                    </li>
+
+                    <li><i class="icon-blocked"></i>
+                        Is Blocked:
+                        <label class="checkbox-inline">
+                            <input id="is_blocked{{core_users__id}}" {{status}} # if (status == 'Blocked') { # checked="checked" # } # type="checkbox" data-id="{{core_users__id}}" class="is_blocked switch switch-mini" data-off-color="danger" data-on-label="Blocked" data-off-label="UnBlocked" >
+                        </label>
+                    </li>
+
+                    <li><i class="icon-blocked"></i>
+                        Is Suspended Permanently:
+                        <label class="checkbox-inline">
+                            <input id="is_suspended_perma{{core_users__id}}" {{status}} # if (status == '7' || status == 7 || status == 'Suspended Permanently') { # checked="checked" disabled="disabled" # } # type="checkbox" data-id="{{core_users__id}}" class="is_SuspendedPermanently switch switch-mini" data-off-color="danger" data-on-label="SuspendedPermanently" >
+                        </label>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-md-6 pull-right">
+                <h4>Documents</h4>
+                <div class="no_documents_{{core_users__id}} hidden">User doesn't have any document copies!</div>
+                <table class="table table-bordered dataTable hidden" id="Data_user_table_{{core_users__id}}" aria-describedby="Data_user_table_{{core_users__id}}">
+                    <thead>
+                        <th>Type</th>
+                        <th>Number</th>
+                        <th>Country</th>
+                        <th>Copy</th>
+                        <th>Verified</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{identity_type}}</td>
+                            <td>{{document_number}}</td>
+                            <td>{{country}}</td>
+                            <td>{{copy_file_path}}</td>
+                            <td>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" class="switch" data-on-label="Verified" data-off-label="Unverified" checked="checked">
+                                </label>
+                            </td>
+                            <td>{{IsVerified}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+
+        <div class="col-md-6 pull-right" style="margin-top:20px">
+            <h4>Payment Accounts</h4>
+            <div class="no_maccounts_{{core_users__id}} hidden">User doesn't have any Payment accounts!</div>
+            <table class="table table-bordered dataTable hidden" id="MAccounts_user_table_{{core_users__id}}" aria-describedby="MAccounts_user_table_{{core_users__id}}">
+                <thead>
+                    <th>Type</th>
+                    <th>Number</th>
+                    <th>AddDate</th>
+                    <th>Verified</th>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>{{identity_type}}</td>
+                    <td>{{document_number}}</td>
+                    <td>{{country}}</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+
+        </ul>
+    </div>
+    </div>
+</script>

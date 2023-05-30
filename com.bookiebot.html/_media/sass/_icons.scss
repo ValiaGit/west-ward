@@ -1,0 +1,39 @@
+// General Icons
+$icon-sprite-dimensions: true;
+$icon-layout: smart;
+$icon-sprite-base-class: '.icon';
+@import "icon/*.png";
+@include all-icon-sprites;
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon-checkbox {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -8px;
+}
+
+// Sport Icons
+$sport-sprite-dimensions: true;
+$sport-layout: smart;
+$sport-sprite-base-class: '.sport';
+@import "sport/*.png";
+@include all-sport-sprites;
+
+.sport {
+  @extend .icon;
+}
+
+
+.icon-fb,
+.icon-google,
+.icon-info-large {
+
+  &:hover {
+    @include opacity(0.7);
+  }
+}

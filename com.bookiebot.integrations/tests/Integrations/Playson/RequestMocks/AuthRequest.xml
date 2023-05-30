@@ -1,0 +1,6 @@
+<!-- This is mock of request sent by playson in our system -->
+<server session='1234' time='2014-01-01T00:00:00Z'>
+    <enter id='101' guid='R0TCR6LSHCMJDMJQ' key='testkey123'>
+        <game name='alice_c' />
+    </enter>
+</server>

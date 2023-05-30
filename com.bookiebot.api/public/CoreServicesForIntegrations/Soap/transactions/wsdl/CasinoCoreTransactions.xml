@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<definitions xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+             xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy"
+             xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns:tns="http://transactions.casinocore.singular.uk/"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/"
+             targetNamespace="http://transactions.casinocore.singular.uk/" name="CasinoCoreTransactions">
+    <types>
+        <xsd:schema>
+            <xsd:import namespace="http://transactions.casinocore.singular.uk/"
+                        schemaLocation="http://api.singular.uk/CoreServicesForIntegrations/Soap/transactions/wsdl/CasinoCoreTransactionsXSD.xml"/>
+        </xsd:schema>
+        <xsd:schema>
+            <xsd:import
+                    schemaLocation="http://api.singular.uk/CoreServicesForIntegrations/Soap/transactions/wsdl/CasinoCoreTransactionsXSD2.xml"/>
+        </xsd:schema>
+    </types>
+
+
+    <message name="withdrawMoney">
+        <part name="parameters" element="tns:withdrawMoney"/>
+    </message>
+    <message name="withdrawMoneyResponse">
+        <part name="parameters" element="tns:withdrawMoneyResponse"/>
+    </message>
+
+
+
+
+
+    <message name="checkTransactionStatus">
+        <part name="parameters" element="tns:checkTransactionStatus"/>
+    </message>
+    <message name="checkTransactionStatusResponse">
+        <part name="parameters" element="tns:checkTransactionStatusResponse"/>
+    </message>
+
+
+    <message name="rollbackTransaction">
+        <part name="parameters" element="tns:rollbackTransaction"/>
+    </message>
+    <message name="rollbackTransactionResponse">
+        <part name="parameters" element="tns:rollbackTransactionResponse"/>
+    </message>
+
+
+    <message name="changeTransactionStatus">
+        <part name="parameters" element="tns:changeTransactionStatus"/>
+    </message>
+    <message name="changeTransactionStatusResponse">
+        <part name="parameters" element="tns:changeTransactionStatusResponse"/>
+    </message>
+
+
+    <message name="transferBetweenAccounts">
+        <part name="parameters" element="tns:transferBetweenAccounts"/>
+    </message>
+    <message name="transferBetweenAccountsResponse">
+        <part name="parameters" element="tns:transferBetweenAccountsResponse"/>
+    </message>
+
+
+    <message name="depositMoney">
+        <part name="parameters" element="tns:depositMoney"/>
+    </message>
+    <message name="depositMoneyResponse">
+        <part name="parameters" element="tns:depositMoneyResponse"/>
+    </message>
+
+
+    <portType name="CasinoCoreTransactions">
+
+
+
+        <operation name="withdrawMoney">
+            <input message="tns:withdrawMoney"/>
+            <output message="tns:withdrawMoneyResponse"/>
+        </operation>
+
+
+        <operation name="checkTransactionStatus">
+            <input message="tns:checkTransactionStatus"/>
+            <output message="tns:checkTransactionStatusResponse"/>
+        </operation>
+
+        <operation name="rollbackTransaction">
+            <input message="tns:rollbackTransaction"/>
+            <output message="tns:rollbackTransactionResponse"/>
+        </operation>
+
+
+        <operation name="changeTransactionStatus">
+            <input message="tns:changeTransactionStatus"/>
+            <output message="tns:changeTransactionStatusResponse"/>
+        </operation>
+
+        <operation name="transferBetweenAccounts">
+            <input message="tns:transferBetweenAccounts"/>
+            <output message="tns:transferBetweenAccountsResponse"/>
+        </operation>
+
+        <operation name="depositMoney">
+            <input message="tns:depositMoney"/>
+            <output message="tns:depositMoneyResponse"/>
+        </operation>
+
+    </portType>
+
+
+    <binding name="CasinoCoreTransactionsPortBinding" type="tns:CasinoCoreTransactions">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+
+
+
+
+        <operation name="withdrawMoney">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+
+
+        <operation name="checkTransactionStatus">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+
+
+        <operation name="rollbackTransaction">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+
+
+        <operation name="changeTransactionStatus">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+
+
+        <operation name="transferBetweenAccounts">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+
+
+        <operation name="depositMoney">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+
+
+    </binding>
+    <service name="CasinoCoreTransactions">
+        <port name="CasinoCoreTransactions" binding="tns:CasinoCoreTransactionsPortBinding">
+            <soap:address location="http://api.singular.uk/CoreServicesForIntegrations/Soap/transactions/"/>
+        </port>
+    </service>
+
+</definitions>
