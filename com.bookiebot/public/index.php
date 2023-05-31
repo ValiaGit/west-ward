@@ -11,7 +11,7 @@ define("ROOT_DIR", substr(dirname(__FILE__), 0, -6));
 define("PUBLIC_DIR", dirname(__FILE__));
 
 //ENGINE
-define("ENGINE_DIR", ROOT_DIR . "engine/");
+define("ENGINE_DIR", ROOT_DIR . "engine/startup.php");
 
 //SYSTEM CLASSES DIR
 define("SYSTEM_DIR", ENGINE_DIR . "system/");
@@ -36,7 +36,7 @@ define("TIME", time());
 $env = "local";
 
 //INITIALIZE
-require_once ENGINE_DIR . '/workspace/com.bookiebot/engine/startup.php';
+// require_once ENGINE_DIR . '/workspace/com.bookiebot/engine/startup.php';
 
 //print_r($_SERVER);
 
