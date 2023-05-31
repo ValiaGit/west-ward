@@ -11,7 +11,7 @@ define("ROOT_DIR", substr(dirname(__FILE__), 0, -6));
 define("PUBLIC_DIR", dirname(__FILE__));
 
 //ENGINE
-define("ENGINE_DIR", ROOT_DIR . "engine/startup.php");
+define("ENGINE_DIR", ROOT_DIR . "engine/");
 
 //SYSTEM CLASSES DIR
 define("SYSTEM_DIR", ENGINE_DIR . "system/");
