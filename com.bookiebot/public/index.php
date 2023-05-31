@@ -36,7 +36,7 @@ define("TIME", time());
 $env = "local";
 
 //INITIALIZE
-require_once ENGINE_DIR . "com.bookiebot/engine/startup.php";
+require_once ENGINE_DIR . '/workspace/com.bookiebot/engine/startup.php';
 
 //print_r($_SERVER);
 
