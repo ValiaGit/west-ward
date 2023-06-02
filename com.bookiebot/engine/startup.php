@@ -1,8 +1,8 @@
 <?php
 
-if (!defined("APP")) {
-    die("No Access!");
-}
+// if (!defined("APP")) {
+//     die("No Access!");
+// }
 
 
 
