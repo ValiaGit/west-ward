@@ -1535,7 +1535,7 @@ class SmartyException extends Exception
  * Smarty compiler exception class
  * @package Smarty
  */
-class SmartyCompilerException extends SmartyException
+class SmartyCompilerException 
 {
     public function __toString()
     {
@@ -1546,7 +1546,7 @@ class SmartyCompilerException extends SmartyException
      * The line number of the template error
      * @var int|null
      */
-    public $line = null;
+    public $line = 0;
     
     /**
      * The template source snippet relating to the error

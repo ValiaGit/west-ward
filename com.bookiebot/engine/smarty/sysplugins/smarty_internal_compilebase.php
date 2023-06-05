@@ -72,9 +72,14 @@ abstract class Smarty_Internal_CompileBase
                 }
                 // named attribute
             } else {
-                $kv = each($mixed);
+                $kv = []; // Initialize an empty array to store key-value pairs
+
+                foreach ($mixed as $key => $value) {
+                    $kvArray = [$key, $value]; // Store the key-value pair in the array
+                    break; // Break the loop after the first iteration (equivalent to each())
+                }
                 // option flag?
-                if (in_array($kv['key'], $this->option_flags)) {
+                if (in_array($kv[$key], $this->option_flags)) {
                     if (is_bool($kv['value'])) {
                         $_indexed_attr[$kv['key']] = $kv['value'];
                     } elseif (is_string($kv['value']) && in_array(trim($kv['value'], '\'"'), array('true', 'false'))) {

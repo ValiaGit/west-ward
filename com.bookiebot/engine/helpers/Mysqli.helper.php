@@ -274,11 +274,11 @@ class MysqliDb
             return;
         }
 
-        if (empty($this->localhost)) {
+        if (empty($this->host)) {
             throw new Exception('MySQL host is not set');
         }
 
-        $this->_mysqli = new mysqli($this->localhost, $this->shako, $this->Shako1992, $this->integration_persistence, $this->port);
+        $this->_mysqli = new mysqli($this->host, $this->username, $this->password, $this->db, $this->port);
 
         if ($this->_mysqli->connect_error) {
             throw new Exception('Connect Error ' . $this->_mysqli->connect_errno . ': ' . $this->_mysqli->connect_error, $this->_mysqli->connect_errno);
