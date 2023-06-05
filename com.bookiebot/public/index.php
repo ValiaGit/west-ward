@@ -36,7 +36,7 @@ define("TIME", time());
 $env = "local";
 
 //INITIALIZE
-include_once ENGINE_DIR . "startup.php";
+require_once ENGINE_DIR . "startup.php";
 
 //print_r($_SERVER);
 
