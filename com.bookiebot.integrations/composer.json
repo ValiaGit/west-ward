@@ -6,7 +6,7 @@
     "type": "project",
     "require": {
         "php": "^8.2",
-        "laravel/framework": "^9",
+        "laravel/framework": "v9.52.8",
         "predis/predis": "^1.1",
         "zircote/swagger-php": "^3.0",
         "darkaonline/l5-swagger": "^8.0",
@@ -16,8 +16,8 @@
         "fzaninotto/faker": "^1.0",
         "mockery/mockery": "^1.4",
         "phpunit/phpunit": "^9.0",
-        "symfony/css-selector": "^5.0",
-        "symfony/dom-crawler": "^5.0"
+        "symfony/css-selector": "^5.4",
+        "symfony/dom-crawler": "^5.4"
     },    
     "autoload": {
         "classmap": [
